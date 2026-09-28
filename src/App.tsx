@@ -1,30 +1,43 @@
+import { lazy, Suspense } from 'react';
+import { MotionConfig } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { ThemeProvider } from '@/components/ThemeProvider';
-import { DemoBadge } from '@/components/layout/DemoBadge';
 import { SiteLayout } from '@/components/layout/SiteLayout';
-import { Clinic } from '@/routes/Clinic';
-import { Community } from '@/routes/Community';
-import { Landing } from '@/routes/Landing';
-import { Monitor } from '@/routes/Monitor';
-import { MotherApp } from '@/routes/MotherApp';
-import { NotFound } from '@/routes/NotFound';
+
+const Landing = lazy(() => import('@/routes/Landing').then((m) => ({ default: m.Landing })));
+const Monitor = lazy(() => import('@/routes/Monitor').then((m) => ({ default: m.Monitor })));
+const MotherApp = lazy(() => import('@/routes/MotherApp').then((m) => ({ default: m.MotherApp })));
+const Community = lazy(() => import('@/routes/Community').then((m) => ({ default: m.Community })));
+const Clinic = lazy(() => import('@/routes/Clinic').then((m) => ({ default: m.Clinic })));
+const NotFound = lazy(() => import('@/routes/NotFound').then((m) => ({ default: m.NotFound })));
+
+function RouteFallback() {
+  const { t } = useTranslation();
+  return (
+    <div className="flex min-h-[50vh] items-center justify-center text-sm text-(--fg-muted)">{t('common.loading')}</div>
+  );
+}
 
 function App() {
   return (
     <ThemeProvider>
-      <BrowserRouter>
-        <Routes>
-          <Route element={<SiteLayout />}>
-            <Route index element={<Landing />} />
-            <Route path="app" element={<MotherApp />} />
-            <Route path="community" element={<Community />} />
-            <Route path="clinic" element={<Clinic />} />
-            <Route path="*" element={<NotFound />} />
-          </Route>
-          <Route path="monitor" element={<Monitor />} />
-        </Routes>
-      </BrowserRouter>
-      <DemoBadge />
+      <MotionConfig reducedMotion="user">
+        <BrowserRouter>
+          <Suspense fallback={<RouteFallback />}>
+            <Routes>
+              <Route element={<SiteLayout />}>
+                <Route index element={<Landing />} />
+                <Route path="app" element={<MotherApp />} />
+                <Route path="community" element={<Community />} />
+                <Route path="clinic" element={<Clinic />} />
+                <Route path="*" element={<NotFound />} />
+              </Route>
+              <Route path="monitor" element={<Monitor />} />
+            </Routes>
+          </Suspense>
+        </BrowserRouter>
+      </MotionConfig>
     </ThemeProvider>
   );
 }

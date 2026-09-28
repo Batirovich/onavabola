@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 import { Wordmark } from '@/components/brand/Wordmark';
+import { DemoBadge } from '@/components/layout/DemoBadge';
 import { LanguageSwitch } from '@/components/layout/LanguageSwitch';
 import { ThemeToggle } from '@/components/layout/ThemeToggle';
 import { cn } from '@/lib/utils';
@@ -45,7 +46,8 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-2 lg:flex">
+        <div className="hidden items-center gap-3 lg:flex">
+          <DemoBadge />
           <LanguageSwitch />
           <ThemeToggle />
         </div>
@@ -88,9 +90,10 @@ export function Header() {
                   {t(`nav.${item.key}`)}
                 </NavLink>
               ))}
-              <div className="mt-2 flex items-center gap-2 border-t border-(--border) pt-3">
+              <div className="mt-2 flex flex-wrap items-center gap-2 border-t border-(--border) pt-3">
                 <LanguageSwitch />
                 <ThemeToggle />
+                <DemoBadge />
               </div>
             </div>
           </motion.nav>

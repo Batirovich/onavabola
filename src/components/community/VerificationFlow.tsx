@@ -52,7 +52,7 @@ export function VerificationFlow({ onClose, onComplete }: { onClose: () => void;
               <span key={s} className={cn('h-1.5 w-8 rounded-full', s <= step ? 'bg-lapis-700' : 'bg-linen-300')} />
             ))}
           </div>
-          <button type="button" onClick={onClose} aria-label="Close" className="rounded-full p-1.5 hover:bg-linen-100">
+          <button type="button" onClick={onClose} aria-label={t('community.verify.close')} className="rounded-full p-1.5 hover:bg-linen-100">
             <X className="h-5 w-5" aria-hidden="true" />
           </button>
         </div>

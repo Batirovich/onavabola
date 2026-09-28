@@ -3,6 +3,7 @@ import { ArrowLeft } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Wordmark } from '@/components/brand/Wordmark';
+import { DemoBadge } from '@/components/layout/DemoBadge';
 import { LanguageSwitch } from '@/components/layout/LanguageSwitch';
 
 /**
@@ -21,7 +22,10 @@ export function MonitorShell({ children }: { children: ReactNode }) {
             {t('nav.home')}
           </Link>
           <Wordmark className="[&_span:last-child]:text-white" />
-          <LanguageSwitch className="border-white/15 bg-white/5" />
+          <div className="flex items-center gap-3">
+            <DemoBadge className="hidden border-white/15 bg-white/5 text-night-50 sm:inline-flex" />
+            <LanguageSwitch className="border-white/15 bg-white/5" />
+          </div>
         </div>
       </header>
       <main id="main">{children}</main>

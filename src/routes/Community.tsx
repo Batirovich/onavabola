@@ -78,7 +78,7 @@ export function Community() {
         </p>
       </div>
 
-      <div className="mt-8 flex items-center justify-between gap-3 rounded-2xl border border-(--border) bg-(--bg-elevated) p-4">
+      <div className="mt-8 flex flex-col items-start gap-3 rounded-2xl border border-(--border) bg-(--bg-elevated) p-4 sm:flex-row sm:items-center sm:justify-between">
         {profile ? (
           <div className="flex items-center gap-3">
             <GeometricAvatar seed={profile.avatarSeed} size={36} />
@@ -91,7 +91,7 @@ export function Community() {
           <button
             type="button"
             onClick={() => setVerifyOpen(true)}
-            className="inline-flex shrink-0 items-center gap-2 rounded-full bg-lapis-700 px-4 py-2 text-sm font-semibold text-white hover:bg-lapis-600"
+            className="inline-flex w-full shrink-0 items-center justify-center gap-2 rounded-full bg-lapis-700 px-4 py-2 text-sm font-semibold text-white hover:bg-lapis-600 sm:w-auto"
           >
             <UserPlus className="h-4 w-4" aria-hidden="true" />
             {t('community.joinCta')}
@@ -110,9 +110,13 @@ export function Community() {
       )}
 
       <div className="mt-6 space-y-4">
-        {posts.map((post) => (
-          <PostCard key={post.id} post={post} />
-        ))}
+        {posts.length === 0 ? (
+          <p className="rounded-2xl border border-dashed border-(--border) p-8 text-center text-sm text-(--fg-muted)">
+            {t('community.feed.empty')}
+          </p>
+        ) : (
+          posts.map((post) => <PostCard key={post.id} post={post} />)
+        )}
       </div>
 
       <div className="mt-10">

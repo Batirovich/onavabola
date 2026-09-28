@@ -187,7 +187,8 @@
       "back": "Orqaga",
       "finish": "Hamjamiyatga kirish",
       "successTitle": "Xush kelibsiz!",
-      "successBody": "Endi siz hamjamiyatda suhbatlasha olasiz."
+      "successBody": "Endi siz hamjamiyatda suhbatlasha olasiz.",
+      "close": "Yopish"
     },
     "channels": {
       "all": "Barchasi"
@@ -199,7 +200,8 @@
       "post": "Joylash",
       "tryExample": "Namuna sinab koʻrish",
       "checking": "Tekshirilmoqda…",
-      "posted": "Joylandi!"
+      "posted": "Joylandi!",
+      "empty": "Bu kanalda hali postlar yoʻq."
     },
     "moderation": {
       "blockedTitle": "Bu post joylanmadi",

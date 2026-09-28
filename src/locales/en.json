@@ -187,7 +187,8 @@
       "back": "Back",
       "finish": "Enter the community",
       "successTitle": "Welcome!",
-      "successBody": "You can now take part in the conversation."
+      "successBody": "You can now take part in the conversation.",
+      "close": "Close"
     },
     "channels": {
       "all": "All"
@@ -199,7 +200,8 @@
       "post": "Post",
       "tryExample": "Try an example",
       "checking": "Checking…",
-      "posted": "Posted!"
+      "posted": "Posted!",
+      "empty": "No posts in this channel yet."
     },
     "moderation": {
       "blockedTitle": "This post wasn't published",
