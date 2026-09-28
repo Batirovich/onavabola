@@ -15,6 +15,7 @@ import { LiveView } from '@/components/monitor/LiveView';
 import { SimulateControls } from '@/components/monitor/SimulateControls';
 import { SleepChart } from '@/components/monitor/SleepChart';
 import { Timeline24h } from '@/components/monitor/Timeline24h';
+import deviceScene from '@/assets/monitor-device-scene.webp';
 import { LEARNING_WINDOW_DAYS } from '@/data/monitor';
 import { useMonitorDemo } from '@/hooks/useMonitorDemo';
 import { MonitorShell } from '@/components/layout/MonitorShell';
@@ -29,6 +30,22 @@ export function Monitor() {
 
   return (
     <MonitorShell>
+      <div className="border-b border-white/10 bg-night-900">
+        <div className="mx-auto flex max-w-[1400px] flex-col items-center gap-6 px-4 py-10 sm:px-6 md:flex-row md:justify-between md:py-14 lg:px-8">
+          <div className="text-center md:max-w-md md:text-left">
+            <p className="font-display text-3xl font-bold text-white sm:text-4xl">{t('meta.monitor.title')}</p>
+            <p className="mt-3 text-sm leading-relaxed text-night-50 sm:text-base">{t('meta.monitor.description')}</p>
+          </div>
+          <img
+            src={deviceScene}
+            alt=""
+            aria-hidden="true"
+            className="h-56 w-auto shrink-0 select-none sm:h-64 md:h-72"
+            draggable={false}
+          />
+        </div>
+      </div>
+
       <div className="mx-auto max-w-[1400px] space-y-6 px-4 py-8 sm:px-6 lg:px-8">
         <div className="flex flex-wrap items-center justify-between gap-4">
           <DeviceStatusBar />
