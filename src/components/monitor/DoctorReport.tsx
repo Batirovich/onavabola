@@ -49,7 +49,7 @@ export function DoctorReport({ onClose }: { onClose: () => void }) {
           <table className="mt-2 w-full text-left text-sm">
             <thead>
               <tr className="border-b border-linen-300 text-ink-500">
-                <th className="py-1.5 font-medium">{formatDate(new Date(), lng, { day: 'numeric', month: 'short' })}</th>
+                <th className="py-1.5 font-medium">{t('monitor.doctorReport.dateColumn')}</th>
                 <th className="py-1.5 font-medium">{t('monitor.stats.sleep')}</th>
                 <th className="py-1.5 font-medium">{t('monitor.stats.feeds')}</th>
               </tr>

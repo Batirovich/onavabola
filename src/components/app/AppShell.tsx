@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { TabBar, type AppTab } from '@/components/app/TabBar';
 import { HomeTab } from '@/components/app/tabs/HomeTab';
 import { PregnancyTab } from '@/components/app/tabs/PregnancyTab';
@@ -16,14 +16,29 @@ const TAB_COMPONENTS: Record<AppTab, React.ComponentType<{ onNavigate: (tab: App
   profile: ProfileTab,
 };
 
-export function AppShell({ className }: { className?: string }) {
-  const [tab, setTab] = useState<AppTab>('home');
+export function AppShell({
+  className,
+  activeTab,
+  onTabChange,
+}: {
+  className?: string;
+  /** Optional external control (e.g. a feature list next to the phone frame on desktop) — falls back to internal state when omitted. */
+  activeTab?: AppTab;
+  onTabChange?: (tab: AppTab) => void;
+}) {
+  const [internalTab, setInternalTab] = useState<AppTab>('home');
+  const tab = activeTab ?? internalTab;
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const handleChange = (next: AppTab) => {
-    setTab(next);
+    setInternalTab(next);
+    onTabChange?.(next);
     scrollRef.current?.scrollTo({ top: 0 });
   };
+
+  useEffect(() => {
+    scrollRef.current?.scrollTo({ top: 0 });
+  }, [activeTab]);
 
   const ActiveTab = TAB_COMPONENTS[tab];
 

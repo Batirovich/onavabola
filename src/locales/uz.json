@@ -66,6 +66,14 @@
       "speech": "Nutq",
       "profile": "Profil"
     },
+    "featureBlurbs": {
+      "home": "Kunlik eslatmalar va Aziz haqida qisqacha maʼlumot",
+      "pregnancy": "Haftalik kuzatuv va ogohlantiruvchi belgilar",
+      "recovery": "Ovqatlanish, yengil mashqlar va EPDS tekshiruvi",
+      "baby": "Emlash kalendari va oʻsish koʻrsatkichlari",
+      "speech": "Nutq oʻyinlari va ovoz yozuvlari",
+      "profile": "Taxallus va maxfiylik sozlamalari"
+    },
     "greeting": "Salom, {{name}}!",
     "today": "Bugun",
     "home": {
@@ -413,6 +421,7 @@
       "print": "Chop etish",
       "close": "Yopish",
       "summaryTitle": "Umumiy koʻrsatkichlar",
+      "dateColumn": "Sana",
       "generatedFor": "Tayyorlandi: Dr. uchun, Ona va Bola tibbiy hamkori"
     }
   },

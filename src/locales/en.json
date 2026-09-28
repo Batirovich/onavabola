@@ -66,6 +66,14 @@
       "speech": "Speech",
       "profile": "Profile"
     },
+    "featureBlurbs": {
+      "home": "Daily reminders and a snapshot of Aziz",
+      "pregnancy": "Week-by-week tracking and warning signs",
+      "recovery": "Nutrition, gentle exercises, and an EPDS check-in",
+      "baby": "Vaccination calendar and growth milestones",
+      "speech": "Speech practice games and voice recordings",
+      "profile": "Pseudonym and privacy settings"
+    },
     "greeting": "Hi, {{name}}!",
     "today": "Today",
     "home": {
@@ -413,6 +421,7 @@
       "print": "Print",
       "close": "Close",
       "summaryTitle": "Summary",
+      "dateColumn": "Date",
       "generatedFor": "Prepared for your doctor, via Ona va Bola"
     }
   },

@@ -9,7 +9,22 @@ import {
   type ReasonProbability,
 } from '@/data/monitor';
 import { lastFeedForNow } from '@/data/monitorStats';
+import { TODAY } from '@/data/profiles';
 import type { CryReason } from '@/data/types';
+
+/**
+ * The generated dataset (feeds, sleep, cries) is anchored to the fixed
+ * demo date `TODAY`, not the real calendar date — so a "now" for live
+ * interactions combines the real time-of-day (feels current during a
+ * live demo) with that fixed date (keeps lookups like "last feed" sane
+ * no matter what day the demo actually runs on).
+ */
+function demoNow(): Date {
+  const real = new Date();
+  const anchored = new Date(TODAY);
+  anchored.setHours(real.getHours(), real.getMinutes(), real.getSeconds(), real.getMilliseconds());
+  return anchored;
+}
 
 export type BabyState = 'sleeping' | 'awake' | 'crying';
 
@@ -128,7 +143,7 @@ export function useMonitorDemo() {
 
   const simulateCry = useCallback(() => {
     if (state.activeCry) return;
-    const now = new Date();
+    const now = demoNow();
     const { minutesAgo } = lastFeedForNow(now);
     const sleptForMin = 60 + Math.round(Math.random() * 60);
     const predictions = predictReasons(

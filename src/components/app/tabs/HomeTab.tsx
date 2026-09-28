@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Card } from '@/components/app/Card';
 import { ListGroup, ListRow } from '@/components/app/ListRow';
 import type { AppTab } from '@/components/app/TabBar';
-import { AZIZ, ageInMonths, MALIKA } from '@/data/profiles';
+import { AZIZ, ageInMonths, MALIKA, TODAY } from '@/data/profiles';
 import { cryCountToday, sleepPerDay } from '@/data/monitorStats';
 import type { SupportedLanguage } from '@/i18n';
 import { formatDate } from '@/lib/format';
@@ -22,7 +22,7 @@ export function HomeTab({ onNavigate }: { onNavigate: (tab: AppTab) => void }) {
       <div className="flex items-center justify-between">
         <div>
           <p className="font-display text-2xl font-bold text-ink-900">{t('app.greeting', { name: MALIKA.name.split(' ')[0] })}</p>
-          <p className="text-sm text-ink-500">{formatDate(new Date(), lng, { weekday: 'long', day: 'numeric', month: 'long' })}</p>
+          <p className="text-sm text-ink-500">{formatDate(TODAY, lng, { weekday: 'long', day: 'numeric', month: 'long' })}</p>
         </div>
         <div className="flex h-12 w-12 items-center justify-center rounded-full bg-lapis-700 font-display text-lg font-bold text-white shadow-[0_4px_10px_-2px_rgba(21,43,84,0.4)]">
           {MALIKA.name.charAt(0)}
@@ -72,7 +72,7 @@ export function HomeTab({ onNavigate }: { onNavigate: (tab: AppTab) => void }) {
 
       <Card title={t('app.home.nextCheckupTitle')}>
         <p className="text-sm text-ink-600">
-          {formatDate(new Date(Date.now() + 9 * 86400000), lng, { day: 'numeric', month: 'long' })} — {lng === 'uz' ? 'rejalashtirilgan emlash' : 'scheduled vaccination'}
+          {formatDate(new Date(TODAY.getTime() + 9 * 86400000), lng, { day: 'numeric', month: 'long' })} — {lng === 'uz' ? 'rejalashtirilgan emlash' : 'scheduled vaccination'}
         </p>
       </Card>
     </div>

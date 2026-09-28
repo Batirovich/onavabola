@@ -19,7 +19,7 @@ export function ModerationLog({ entries }: { entries: ModerationLogEntry[] }) {
   return (
     <div className="rounded-2xl border border-linen-300 bg-white p-4">
       <p className="font-display text-base font-bold text-ink-900">{t('community.moderation.logTitle')}</p>
-      <ul className="mt-3 space-y-2.5">
+      <ul className="mt-3 max-h-[70vh] space-y-2.5 overflow-y-auto pr-0.5">
         {entries.map((entry) => (
           <li key={entry.id} className="rounded-xl border border-linen-200 p-2.5 text-xs">
             <div className="flex items-center justify-between gap-2">

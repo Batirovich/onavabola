@@ -68,7 +68,7 @@ export function Community() {
   }
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6 lg:py-14">
+    <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:py-14">
       <div className="text-center">
         <h1 className="font-display text-3xl font-bold text-(--fg) sm:text-4xl">{t('meta.community.title')}</h1>
         <p className="mt-3 text-(--fg-muted)">{t('meta.community.description')}</p>
@@ -99,28 +99,30 @@ export function Community() {
         )}
       </div>
 
-      <div className="mt-6">
-        <ChannelTabs active={channel} onChange={setChannel} />
-      </div>
+      <div className="mt-8 lg:grid lg:grid-cols-[1fr_340px] lg:items-start lg:gap-8">
+        <div className="min-w-0">
+          <ChannelTabs active={channel} onChange={setChannel} />
 
-      {profile && (
-        <div className="mt-4">
-          <ComposeBox profile={profile} onPost={handlePost} onLog={handleLog} />
+          {profile && (
+            <div className="mt-4">
+              <ComposeBox profile={profile} onPost={handlePost} onLog={handleLog} />
+            </div>
+          )}
+
+          <div className="mt-6 space-y-4">
+            {posts.length === 0 ? (
+              <p className="rounded-2xl border border-dashed border-(--border) p-8 text-center text-sm text-(--fg-muted)">
+                {t('community.feed.empty')}
+              </p>
+            ) : (
+              posts.map((post) => <PostCard key={post.id} post={post} />)
+            )}
+          </div>
         </div>
-      )}
 
-      <div className="mt-6 space-y-4">
-        {posts.length === 0 ? (
-          <p className="rounded-2xl border border-dashed border-(--border) p-8 text-center text-sm text-(--fg-muted)">
-            {t('community.feed.empty')}
-          </p>
-        ) : (
-          posts.map((post) => <PostCard key={post.id} post={post} />)
-        )}
-      </div>
-
-      <div className="mt-10">
-        <ModerationLog entries={log} />
+        <div className="mt-10 lg:sticky lg:top-24 lg:mt-0">
+          <ModerationLog entries={log} />
+        </div>
       </div>
 
       {verifyOpen && (

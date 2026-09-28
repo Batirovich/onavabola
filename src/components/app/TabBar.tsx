@@ -23,7 +23,7 @@ const TABS: Array<{ id: AppTab; icon: typeof HomeTabIcon }> = [
 export function TabBar({ active, onChange }: { active: AppTab; onChange: (tab: AppTab) => void }) {
   const { t } = useTranslation();
   return (
-    <nav className="flex border-t border-linen-300 bg-white/95 px-1.5 pb-1.5 pt-1 backdrop-blur" aria-label={t('nav.app')}>
+    <nav className="flex border-t border-linen-300 bg-white/95 px-1 pb-1.5 pt-1 backdrop-blur" aria-label={t('nav.app')}>
       {TABS.map(({ id, icon: Icon }) => {
         const isActive = active === id;
         return (
@@ -32,17 +32,19 @@ export function TabBar({ active, onChange }: { active: AppTab; onChange: (tab: A
             type="button"
             onClick={() => onChange(id)}
             aria-current={isActive ? 'page' : undefined}
-            className="flex flex-1 flex-col items-center gap-1 py-1.5 text-[10px] font-semibold transition-colors"
+            className="flex min-w-0 flex-1 flex-col items-center gap-0.5 px-0.5 py-1.5 text-[9px] font-semibold leading-tight transition-colors"
           >
             <span
               className={cn(
-                'flex h-9 w-12 items-center justify-center rounded-full transition-colors',
+                'flex h-7 w-7 items-center justify-center rounded-full transition-colors',
                 isActive ? 'bg-lapis-700 text-white' : 'text-ink-500/65',
               )}
             >
-              <Icon className="h-5 w-5" aria-hidden="true" strokeWidth={isActive ? 2 : 1.75} />
+              <Icon className="h-4 w-4" aria-hidden="true" strokeWidth={isActive ? 2 : 1.75} />
             </span>
-            <span className={isActive ? 'text-lapis-700' : 'text-ink-500/65'}>{t(`app.nav.${id}`)}</span>
+            <span className={cn('block w-full break-words', isActive ? 'text-lapis-700' : 'text-ink-500/65')}>
+              {t(`app.nav.${id}`)}
+            </span>
           </button>
         );
       })}
