@@ -57,6 +57,115 @@
       "description": "Hamshira va mutaxassislar uchun onalar va bolalar holatini kuzatuvchi boshqaruv paneli."
     }
   },
+  "app": {
+    "nav": {
+      "home": "Bosh sahifa",
+      "pregnancy": "Homiladorlik",
+      "recovery": "Tiklanish",
+      "baby": "Chaqaloq",
+      "speech": "Nutq",
+      "profile": "Profil"
+    },
+    "greeting": "Salom, {{name}}!",
+    "today": "Bugun",
+    "home": {
+      "remindersTitle": "Bugungi eslatmalar",
+      "noReminders": "Bugun uchun eslatmalar yoʻq — hammasi joyida.",
+      "babySnapshotTitle": "{{name}} haqida qisqacha",
+      "viewMonitor": "Monitor statistikasini koʻrish",
+      "recoveryCheckinTitle": "Oʻzingizni qanday his qilyapsiz?",
+      "recoveryCheckinBody": "Tezkor tekshiruv — bir necha daqiqa vaqt oladi.",
+      "recoveryCheckinCta": "Tekshiruvni boshlash",
+      "nextCheckupTitle": "Keyingi koʻrik",
+      "reminderItems": {
+        "vaccination": "Aziz uchun rejalashtirilgan emlash",
+        "feedingLog": "Ovqatlantirish jadvalini yangilang",
+        "epds": "Haftalik his-tuygʻu tekshiruvi"
+      }
+    },
+    "pregnancy": {
+      "demoNotice": "Bu boshqa demo profil — Nilufar, 24-haftalik homilador. Istalgan haftani koʻrish uchun slayderni suring.",
+      "weekLabel": "{{week}}-hafta",
+      "trimester": "{{trimester}}-trimestr",
+      "sizeCompareTitle": "Chaqalogʻingiz hozir taxminan",
+      "dueDate": "Taxminiy tugʻruq sanasi",
+      "upcomingTestsTitle": "Yaqinlashib kelayotgan tekshiruvlar",
+      "warningSignsTitle": "Ogohlantiruvchi belgilar",
+      "warningSignsBody": "Quyidagilardan birortasini sezsangiz, darhol shifokoringizga murojaat qiling.",
+      "callDoctor": "Shifokorga qoʻngʻiroq qilish",
+      "babyNoteTitle": "Chaqaloq rivoji",
+      "motherNoteTitle": "Siz uchun"
+    },
+    "recovery": {
+      "nutritionTitle": "Ovqatlanish rejasi",
+      "nutritionSubtitle": "Emizikli onalar uchun oʻzbek taomlari asosida — kaloriya hisobisiz, bosim yoʻq.",
+      "exercisesTitle": "Yengil mashqlar",
+      "exerciseLocked": "Tugʻruqdan keyingi koʻrikdan soʻng ochiladi",
+      "skincareTitle": "Teri parvarishi haqida",
+      "epdsCardTitle": "His-tuygʻu tekshiruvi (EPDS)",
+      "epdsCardBody": "10 ta qisqa savol — his-tuygʻularingizni tushunishga yordam beradi.",
+      "epdsCta": "Tekshiruvni boshlash",
+      "epdsLastScore": "Oxirgi natija: {{score}} / 30 ({{date}})"
+    },
+    "epds": {
+      "title": "His-tuygʻu tekshiruvi",
+      "intro": "Bu 10 ta savol soʻnggi 7 kun ichida oʻzingizni qanday his qilganingiz haqida. Toʻgʻri yoki notoʻgʻri javob yoʻq.",
+      "start": "Boshlash",
+      "questionOf": "{{current}}-savol / {{total}}",
+      "next": "Keyingisi",
+      "back": "Orqaga",
+      "submit": "Yakunlash",
+      "resultTitle": "Natija",
+      "yourScore": "Sizning natijangiz",
+      "notifyNurse": "Patronaj hamshirasiga xabar berish",
+      "notifySent": "Xabar yuborildi. Hamshirangiz siz bilan bogʻlanadi.",
+      "retake": "Qayta toʻldirish",
+      "close": "Yopish"
+    },
+    "baby": {
+      "vaccinationTitle": "Emlash kalendari",
+      "growthTitle": "Oʻsish koʻrsatkichlari",
+      "quickLogTitle": "Tezkor qayd",
+      "logFeed": "Ovqatlantirishni qayd etish",
+      "logSleep": "Uyquni qayd etish",
+      "logged": "Qayd etildi",
+      "viewMonitorStats": "Monitor statistikasiga oʻtish",
+      "vaccinationDone": "Bajarildi",
+      "vaccinationUpcoming": "Rejalashtirilgan",
+      "milestoneAchieved": "Erishildi"
+    },
+    "speech": {
+      "milestonesTitle": "Nutq rivoji roʻyxati",
+      "gamesTitle": "Mashq oʻyinlari",
+      "repeatSoundTitle": "Ovozni takrorlang",
+      "repeatSoundBody": "Kartani bosing va soʻzni ovoz chiqarib takrorlang.",
+      "animalSoundsTitle": "Hayvon ovozlari",
+      "animalSoundsBody": "Hayvonni ovoziga mos tushiring.",
+      "findWordTitle": "Soʻzni toping",
+      "findWordBody": "Berilgan harf bilan boshlanadigan rasmni tanlang.",
+      "playAgain": "Yana oʻynash",
+      "correct": "Toʻgʻri!",
+      "tryAgain": "Yana urinib koʻring",
+      "recordingsTitle": "Ovoz yozuvlari",
+      "recordNew": "Yangi yozuv qoʻshish",
+      "recording": "Yozilmoqda…",
+      "recordingSaved": "Yozuv saqlandi (faqat shu seans uchun)",
+      "therapistTitle": "Sizning nutq terapevtingiz",
+      "assignedExercises": "Tayinlangan mashqlar",
+      "micPermissionDenied": "Mikrofonga ruxsat berilmadi. Brauzer sozlamalarini tekshiring."
+    },
+    "profile": {
+      "title": "Profil va maxfiylik",
+      "visibleTitle": "Boshqalar nimani koʻradi",
+      "privateTitle": "Faqat sizga koʻrinadi",
+      "pseudonym": "Taxallus",
+      "region": "Hudud",
+      "childAge": "Farzand yoshi",
+      "realName": "Toʻliq ism",
+      "phone": "Telefon raqami",
+      "medicalHistory": "Tibbiy tarix"
+    }
+  },
   "monitor": {
     "deviceStatus": {
       "online": "Onlayn",

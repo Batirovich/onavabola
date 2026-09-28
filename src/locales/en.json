@@ -57,6 +57,115 @@
       "description": "A dashboard for nurses and specialists to track mothers' and children's progress and flags."
     }
   },
+  "app": {
+    "nav": {
+      "home": "Home",
+      "pregnancy": "Pregnancy",
+      "recovery": "Recovery",
+      "baby": "Baby",
+      "speech": "Speech",
+      "profile": "Profile"
+    },
+    "greeting": "Hi, {{name}}!",
+    "today": "Today",
+    "home": {
+      "remindersTitle": "Today's reminders",
+      "noReminders": "No reminders for today — you're all caught up.",
+      "babySnapshotTitle": "{{name}} at a glance",
+      "viewMonitor": "View monitor stats",
+      "recoveryCheckinTitle": "How are you feeling?",
+      "recoveryCheckinBody": "A quick check-in — takes just a couple of minutes.",
+      "recoveryCheckinCta": "Start check-in",
+      "nextCheckupTitle": "Next checkup",
+      "reminderItems": {
+        "vaccination": "Scheduled vaccination for Aziz",
+        "feedingLog": "Update your feeding log",
+        "epds": "Weekly wellbeing check-in"
+      }
+    },
+    "pregnancy": {
+      "demoNotice": "This is a different demo profile — Nilufar, 24 weeks pregnant. Drag the slider to preview any week.",
+      "weekLabel": "Week {{week}}",
+      "trimester": "Trimester {{trimester}}",
+      "sizeCompareTitle": "Your baby is about the size of",
+      "dueDate": "Estimated due date",
+      "upcomingTestsTitle": "Upcoming tests",
+      "warningSignsTitle": "Warning signs",
+      "warningSignsBody": "If you notice any of these, contact your doctor right away.",
+      "callDoctor": "Call your doctor",
+      "babyNoteTitle": "Baby's development",
+      "motherNoteTitle": "For you"
+    },
+    "recovery": {
+      "nutritionTitle": "Nutrition plan",
+      "nutritionSubtitle": "Breastfeeding-friendly Uzbek dishes — no calorie counting, no pressure.",
+      "exercisesTitle": "Gentle exercises",
+      "exerciseLocked": "Unlocks after your postnatal checkup",
+      "skincareTitle": "About skin care",
+      "epdsCardTitle": "Wellbeing check-in (EPDS)",
+      "epdsCardBody": "10 short questions — helps you understand how you're feeling.",
+      "epdsCta": "Start check-in",
+      "epdsLastScore": "Last result: {{score}} / 30 ({{date}})"
+    },
+    "epds": {
+      "title": "Wellbeing check-in",
+      "intro": "These 10 questions are about how you've felt over the past 7 days. There are no right or wrong answers.",
+      "start": "Start",
+      "questionOf": "Question {{current}} of {{total}}",
+      "next": "Next",
+      "back": "Back",
+      "submit": "Finish",
+      "resultTitle": "Result",
+      "yourScore": "Your score",
+      "notifyNurse": "Notify patronage nurse",
+      "notifySent": "Message sent. Your nurse will reach out to you.",
+      "retake": "Retake",
+      "close": "Close"
+    },
+    "baby": {
+      "vaccinationTitle": "Vaccination calendar",
+      "growthTitle": "Growth milestones",
+      "quickLogTitle": "Quick log",
+      "logFeed": "Log a feed",
+      "logSleep": "Log sleep",
+      "logged": "Logged",
+      "viewMonitorStats": "Go to monitor stats",
+      "vaccinationDone": "Done",
+      "vaccinationUpcoming": "Upcoming",
+      "milestoneAchieved": "Achieved"
+    },
+    "speech": {
+      "milestonesTitle": "Speech milestone checklist",
+      "gamesTitle": "Practice games",
+      "repeatSoundTitle": "Repeat the sound",
+      "repeatSoundBody": "Tap the card and say the word out loud.",
+      "animalSoundsTitle": "Animal sounds",
+      "animalSoundsBody": "Match each animal to its sound.",
+      "findWordTitle": "Find the word",
+      "findWordBody": "Pick the picture that starts with the given letter.",
+      "playAgain": "Play again",
+      "correct": "Correct!",
+      "tryAgain": "Try again",
+      "recordingsTitle": "Voice recordings",
+      "recordNew": "Add a new recording",
+      "recording": "Recording…",
+      "recordingSaved": "Recording saved (this session only)",
+      "therapistTitle": "Your speech therapist",
+      "assignedExercises": "Assigned exercises",
+      "micPermissionDenied": "Microphone access was denied. Check your browser settings."
+    },
+    "profile": {
+      "title": "Profile & privacy",
+      "visibleTitle": "What others see",
+      "privateTitle": "Only visible to you",
+      "pseudonym": "Pseudonym",
+      "region": "Region",
+      "childAge": "Child's age",
+      "realName": "Full name",
+      "phone": "Phone number",
+      "medicalHistory": "Medical history"
+    }
+  },
   "monitor": {
     "deviceStatus": {
       "online": "Online",

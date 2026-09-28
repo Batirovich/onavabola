@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { AppShell } from '@/components/app/AppShell';
 import { PhoneFrame } from '@/components/PhoneFrame';
 import { usePageMeta } from '@/lib/usePageMeta';
 
@@ -7,14 +8,21 @@ export function MotherApp() {
   usePageMeta('meta.app.title', 'meta.app.description');
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-24 text-center sm:px-6">
-      <h1 className="font-display text-4xl font-bold text-(--fg) sm:text-5xl">{t('meta.app.title')}</h1>
-      <p className="mx-auto mt-4 max-w-xl text-(--fg-muted)">{t('meta.app.description')}</p>
-      <div className="mt-12 hidden justify-center lg:flex">
+    <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6 lg:py-16">
+      <div className="mx-auto max-w-xl text-center">
+        <h1 className="font-display text-3xl font-bold text-(--fg) sm:text-4xl">{t('meta.app.title')}</h1>
+        <p className="mt-3 text-(--fg-muted)">{t('meta.app.description')}</p>
+      </div>
+
+      <div className="mt-10 lg:hidden">
+        <div className="mx-auto h-[720px] max-w-sm overflow-hidden rounded-[2.5rem] border border-(--border) shadow-soft-lapis">
+          <AppShell className="h-full" />
+        </div>
+      </div>
+
+      <div className="mt-10 hidden justify-center lg:flex">
         <PhoneFrame>
-          <div className="flex h-full items-center justify-center p-6 text-center text-sm text-(--fg-muted)">
-            {t('common.comingSoon')}
-          </div>
+          <AppShell className="h-full" />
         </PhoneFrame>
       </div>
     </div>
