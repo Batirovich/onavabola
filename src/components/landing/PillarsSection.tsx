@@ -25,18 +25,20 @@ export function PillarsSection() {
       <SectionHeading title={t('landing.pillars.title')} subtitle={t('landing.pillars.subtitle')} />
 
       <div className="mt-12 grid gap-4 lg:grid-cols-4 lg:grid-rows-2">
-        {/* Monitor — the flagship, dark, larger */}
+        {/* Monitor — the flagship, dark, spans both middle columns */}
         <Link
           to={monitor.link}
-          className="group relative overflow-hidden rounded-3xl bg-night-700 p-6 text-white shadow-soft-night transition-transform hover:-translate-y-1 lg:col-start-2 lg:row-span-2 lg:row-start-1"
+          className="group relative overflow-hidden rounded-3xl bg-night-700 p-7 text-white shadow-soft-night transition-transform hover:-translate-y-1 lg:col-span-2 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:flex lg:items-center lg:gap-8 lg:p-9"
         >
-          <DeviceIllustration state="listening" className="h-28 w-auto" />
-          <p className="mt-4 font-display text-xl font-bold">{monitor.title[lng]}</p>
-          <p className="mt-2 text-sm leading-relaxed text-night-50">{monitor.body[lng]}</p>
-          <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-turquoise-300">
-            {t('landing.pillars.cta')}
-            <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
-          </span>
+          <DeviceIllustration state="listening" className="mx-auto h-32 w-auto shrink-0 lg:mx-0 lg:h-44" />
+          <div className="mt-5 text-center lg:mt-0 lg:text-left">
+            <p className="font-display text-2xl font-bold">{monitor.title[lng]}</p>
+            <p className="mt-2.5 max-w-xs text-sm leading-relaxed text-night-50 lg:max-w-sm">{monitor.body[lng]}</p>
+            <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-turquoise-300">
+              {t('landing.pillars.cta')}
+              <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+            </span>
+          </div>
         </Link>
 
         {/* Pregnancy */}
