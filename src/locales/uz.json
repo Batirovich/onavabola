@@ -50,7 +50,7 @@
     },
     "community": {
       "title": "Hamjamiyat",
-      "description": "Tasdiqlangan, taxallusli onalar hamjamiyati — sun'iy intellekt tomonidan nazorat qilinadigan xavfsiz muhokama."
+      "description": "Tasdiqlangan, taxallusli onalar hamjamiyati — sunʻiy intellekt tomonidan nazorat qilinadigan xavfsiz muhokama."
     },
     "clinic": {
       "title": "Klinika paneli",
@@ -164,6 +164,56 @@
       "realName": "Toʻliq ism",
       "phone": "Telefon raqami",
       "medicalHistory": "Tibbiy tarix"
+    }
+  },
+  "community": {
+    "eligibility": "Faqat homilador, homiladorlikni rejalashtirayotgan yoki yosh bolali onalar uchun.",
+    "joinCta": "Hamjamiyatga qoʻshilish",
+    "joinBanner": "Suhbatga qoʻshilish uchun avval tasdiqlangan boʻlishingiz kerak.",
+    "verify": {
+      "step1Title": "Poliklinika kodi",
+      "step1Body": "Sizga mahalliy poliklinikada berilgan roʻyxatga olish kodini kiriting.",
+      "codePlaceholder": "Masalan: ONA-2026",
+      "codeError": "Kod topilmadi. Demo uchun ONA-2026 kodidan foydalaning.",
+      "step2Title": "MyID orqali tasdiqlash",
+      "step2Body": "Kelajakda MyID orqali tezkor tasdiqlash imkoniyati qoʻshiladi.",
+      "comingSoon": "Tez orada",
+      "step3Title": "Taxallus va avatar",
+      "step3Body": "Ismingiz oʻrniga koʻrinadigan taxallus tanlang.",
+      "pseudonymPlaceholder": "Taxallusingiz",
+      "shareRegion": "Hududimni koʻrsatish",
+      "shareAge": "Farzand yoshi / homiladorlik haftasini koʻrsatish",
+      "next": "Keyingisi",
+      "back": "Orqaga",
+      "finish": "Hamjamiyatga kirish",
+      "successTitle": "Xush kelibsiz!",
+      "successBody": "Endi siz hamjamiyatda suhbatlasha olasiz."
+    },
+    "channels": {
+      "all": "Barchasi"
+    },
+    "feed": {
+      "repliesCount": "{{count}} ta javob",
+      "verifiedMidwife": "Tasdiqlangan doya tomonidan javob berildi",
+      "composePlaceholder": "Fikringizni yozing…",
+      "post": "Joylash",
+      "tryExample": "Namuna sinab koʻrish",
+      "checking": "Tekshirilmoqda…",
+      "posted": "Joylandi!"
+    },
+    "moderation": {
+      "blockedTitle": "Bu post joylanmadi",
+      "heldTitle": "Bu post koʻrib chiqilmoqda",
+      "crisisTitle": "Sizga yordam kerakmi?",
+      "logTitle": "Moderatsiya jurnali",
+      "logAction": {
+        "blocked": "Bloklandi",
+        "held": "Koʻrib chiqilmoqda",
+        "routedToSpecialist": "Mutaxassisga yoʻnaltirildi",
+        "allowed": "Ruxsat etildi"
+      },
+      "reviewedByHuman": "Inson tomonidan koʻrib chiqilgan",
+      "notReviewed": "Avtomatik"
     }
   },
   "monitor": {

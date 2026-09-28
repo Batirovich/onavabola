@@ -166,6 +166,56 @@
       "medicalHistory": "Medical history"
     }
   },
+  "community": {
+    "eligibility": "For women who are pregnant, planning a pregnancy, or raising young children only.",
+    "joinCta": "Join the community",
+    "joinBanner": "You need to verify your account before joining the conversation.",
+    "verify": {
+      "step1Title": "Polyclinic code",
+      "step1Body": "Enter the registration code given to you at your local polyclinic.",
+      "codePlaceholder": "e.g. ONA-2026",
+      "codeError": "Code not found. For this demo, use ONA-2026.",
+      "step2Title": "Verify with MyID",
+      "step2Body": "Fast verification via MyID is coming in a future update.",
+      "comingSoon": "Coming soon",
+      "step3Title": "Pseudonym & avatar",
+      "step3Body": "Choose a pseudonym to show instead of your name.",
+      "pseudonymPlaceholder": "Your pseudonym",
+      "shareRegion": "Show my region",
+      "shareAge": "Show child's age / pregnancy week",
+      "next": "Next",
+      "back": "Back",
+      "finish": "Enter the community",
+      "successTitle": "Welcome!",
+      "successBody": "You can now take part in the conversation."
+    },
+    "channels": {
+      "all": "All"
+    },
+    "feed": {
+      "repliesCount": "{{count}} replies",
+      "verifiedMidwife": "Answered by a verified midwife",
+      "composePlaceholder": "Share something…",
+      "post": "Post",
+      "tryExample": "Try an example",
+      "checking": "Checking…",
+      "posted": "Posted!"
+    },
+    "moderation": {
+      "blockedTitle": "This post wasn't published",
+      "heldTitle": "This post is under review",
+      "crisisTitle": "Do you need support?",
+      "logTitle": "Moderation log",
+      "logAction": {
+        "blocked": "Blocked",
+        "held": "Under review",
+        "routedToSpecialist": "Routed to specialist",
+        "allowed": "Allowed"
+      },
+      "reviewedByHuman": "Reviewed by a human",
+      "notReviewed": "Automatic"
+    }
+  },
   "monitor": {
     "deviceStatus": {
       "online": "Online",
