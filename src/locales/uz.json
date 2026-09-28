@@ -1,0 +1,66 @@
+{
+  "common": {
+    "siteName": "Ona va Bola",
+    "demoBadge": "Demo — namunaviy maʼlumotlar",
+    "skipToContent": "Asosiy tarkibga oʻtish",
+    "themeToggle": {
+      "light": "Yorugʻ rejim",
+      "dark": "Tungi rejim",
+      "switchToLight": "Yorugʻ rejimga oʻtish",
+      "switchToDark": "Tungi rejimga oʻtish"
+    },
+    "language": {
+      "uz": "Oʻzbekcha",
+      "en": "Inglizcha",
+      "switcherLabel": "Tilni tanlang"
+    },
+    "loading": "Yuklanmoqda…",
+    "comingSoon": "Tez orada"
+  },
+  "nav": {
+    "home": "Bosh sahifa",
+    "monitor": "Monitor",
+    "app": "Ilova",
+    "community": "Hamjamiyat",
+    "clinic": "Klinika paneli",
+    "menu": "Menyu",
+    "closeMenu": "Menyuni yopish"
+  },
+  "footer": {
+    "tagline": "Onalar va bolalar uchun — homiladorlikdan 7 yoshgacha yoningizdamiz.",
+    "demoNotice": "Bu InnoWeek.Uz–2026 koʻrgazmasi uchun tayyorlangan demo. Barcha maʼlumotlar oʻylab topilgan boʻlib, haqiqiy foydalanuvchilarga tegishli emas.",
+    "rights": "© 2026 Ona va Bola. Barcha huquqlar himoyalangan.",
+    "sections": {
+      "product": "Mahsulot",
+      "resources": "Maʼlumot"
+    }
+  },
+  "meta": {
+    "home": {
+      "title": "Bosh sahifa",
+      "description": "Ona va Bola — homiladorlikdan 7 yoshgacha onalar va bolalarga yordam beruvchi raqamli platforma va aqlli beshik monitori."
+    },
+    "monitor": {
+      "title": "Aqlli monitor",
+      "description": "Chaqaloq yigʻisini aniqlaydigan, sababini taxmin qiladigan va uyqu-ovqatlanish statistikasini yurituvchi aqlli beshik monitori."
+    },
+    "app": {
+      "title": "Onalar ilovasi",
+      "description": "Homiladorlik, tiklanish, chaqaloq va nutq rivoji boʻyicha kunlik yordamchi ilova."
+    },
+    "community": {
+      "title": "Hamjamiyat",
+      "description": "Tasdiqlangan, taxallusli onalar hamjamiyati — sun'iy intellekt tomonidan nazorat qilinadigan xavfsiz muhokama."
+    },
+    "clinic": {
+      "title": "Klinika paneli",
+      "description": "Hamshira va mutaxassislar uchun onalar va bolalar holatini kuzatuvchi boshqaruv paneli."
+    }
+  },
+  "notFound": {
+    "eyebrow": "404",
+    "title": "Sahifa topilmadi",
+    "body": "Siz qidirgan sahifa mavjud emas yoki boshqa manzilga koʻchirilgan.",
+    "cta": "Bosh sahifaga qaytish"
+  }
+}

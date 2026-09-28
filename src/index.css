@@ -1,0 +1,223 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Alegreya';
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url('./assets/fonts/Alegreya-Roman.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+    U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Alegreya';
+  font-style: italic;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url('./assets/fonts/Alegreya-Italic.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+    U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('./assets/fonts/SourceSans3-Roman.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+    U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: italic;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('./assets/fonts/SourceSans3-Italic.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+    U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@theme {
+  --font-display: 'Alegreya', ui-serif, Georgia, serif;
+  --font-text: 'Source Sans 3', ui-sans-serif, system-ui, sans-serif;
+
+  /* Brand ramps — see DESIGN.md for the named-hex rationale */
+  --color-lapis-50: #eef1f8;
+  --color-lapis-100: #d7dded;
+  --color-lapis-200: #aebbdc;
+  --color-lapis-300: #7f95c4;
+  --color-lapis-400: #4f6aa0;
+  --color-lapis-500: #2f4a7c;
+  --color-lapis-600: #1e3660;
+  --color-lapis-700: #152b54;
+  --color-lapis-800: #101f3d;
+  --color-lapis-900: #0b1528;
+
+  --color-turquoise-50: #eaf7f5;
+  --color-turquoise-100: #cbeae6;
+  --color-turquoise-200: #98d5cd;
+  --color-turquoise-300: #62bbb0;
+  --color-turquoise-400: #359e91;
+  --color-turquoise-500: #1f8a82;
+  --color-turquoise-600: #1a6f6a;
+  --color-turquoise-700: #175a57;
+  --color-turquoise-800: #124442;
+  --color-turquoise-900: #0c2f2e;
+
+  --color-apricot-50: #fdf3ea;
+  --color-apricot-100: #fbe2c7;
+  --color-apricot-200: #f7c491;
+  --color-apricot-300: #f0a161;
+  --color-apricot-400: #e2924c;
+  --color-apricot-500: #d97e34;
+  --color-apricot-600: #b8632a;
+  --color-apricot-700: #914e24;
+  --color-apricot-800: #6b3a1c;
+  --color-apricot-900: #472712;
+
+  --color-rose-50: #fbeaec;
+  --color-rose-100: #f3ccd1;
+  --color-rose-200: #e6a1ab;
+  --color-rose-300: #d5717f;
+  --color-rose-400: #c24b5c;
+  --color-rose-500: #a83a4a;
+  --color-rose-600: #872e3b;
+  --color-rose-700: #66232c;
+
+  --color-linen-50: #fffefc;
+  --color-linen-100: #f7f4ee;
+  --color-linen-200: #efe9dd;
+  --color-linen-300: #e3dac7;
+
+  --color-ink-500: #454b60;
+  --color-ink-700: #2a2e3f;
+  --color-ink-900: #12172a;
+
+  --color-night-50: #7c88ad;
+  --color-night-100: #4d597e;
+  --color-night-300: #2a3358;
+  --color-night-500: #141c37;
+  --color-night-700: #0a1226;
+  --color-night-900: #060a17;
+
+  --shadow-soft-lapis: 0 12px 32px -12px rgb(21 43 84 / 0.28);
+  --shadow-soft-turquoise: 0 12px 32px -12px rgb(31 138 130 / 0.28);
+  --shadow-soft-night: 0 20px 60px -20px rgb(0 0 0 / 0.6);
+
+  --animate-pulse-ring: pulse-ring 2.4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-wave: wave 1.1s ease-in-out infinite;
+
+  @keyframes pulse-ring {
+    0% {
+      transform: scale(0.92);
+      opacity: 0.7;
+    }
+    70% {
+      transform: scale(1.35);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1.35);
+      opacity: 0;
+    }
+  }
+  @keyframes wave {
+    0%,
+    100% {
+      transform: scaleY(0.3);
+    }
+    50% {
+      transform: scaleY(1);
+    }
+  }
+}
+
+:root {
+  color-scheme: light;
+  --bg: var(--color-linen-100);
+  --bg-elevated: var(--color-linen-50);
+  --fg: var(--color-ink-900);
+  --fg-muted: var(--color-ink-500);
+  --border: var(--color-linen-300);
+  --focus-ring: var(--color-turquoise-500);
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: var(--color-night-700);
+  --bg-elevated: var(--color-night-500);
+  --fg: #f2f0ea;
+  --fg-muted: var(--color-night-50);
+  --border: var(--color-night-300);
+  --focus-ring: var(--color-turquoise-300);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+    --bg: var(--color-night-700);
+    --bg-elevated: var(--color-night-500);
+    --fg: #f2f0ea;
+    --fg-muted: var(--color-night-50);
+    --border: var(--color-night-300);
+    --focus-ring: var(--color-turquoise-300);
+  }
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+::selection {
+  background: var(--color-turquoise-200);
+  color: var(--color-ink-900);
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}

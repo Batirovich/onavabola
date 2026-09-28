@@ -1,0 +1,66 @@
+{
+  "common": {
+    "siteName": "Ona va Bola",
+    "demoBadge": "Demo — sample data",
+    "skipToContent": "Skip to main content",
+    "themeToggle": {
+      "light": "Light mode",
+      "dark": "Night mode",
+      "switchToLight": "Switch to light mode",
+      "switchToDark": "Switch to night mode"
+    },
+    "language": {
+      "uz": "Uzbek",
+      "en": "English",
+      "switcherLabel": "Choose language"
+    },
+    "loading": "Loading…",
+    "comingSoon": "Coming soon"
+  },
+  "nav": {
+    "home": "Home",
+    "monitor": "Monitor",
+    "app": "App",
+    "community": "Community",
+    "clinic": "Clinic dashboard",
+    "menu": "Menu",
+    "closeMenu": "Close menu"
+  },
+  "footer": {
+    "tagline": "For mothers and children — with you from pregnancy to age 7.",
+    "demoNotice": "This is a demo built for the InnoWeek.Uz–2026 exhibition. All data is fictional and does not belong to real users.",
+    "rights": "© 2026 Ona va Bola. All rights reserved.",
+    "sections": {
+      "product": "Product",
+      "resources": "Resources"
+    }
+  },
+  "meta": {
+    "home": {
+      "title": "Home",
+      "description": "Ona va Bola — a digital platform and smart bedside baby monitor supporting mothers and children from pregnancy to age 7."
+    },
+    "monitor": {
+      "title": "Smart monitor",
+      "description": "A bedside baby monitor that detects crying, suggests likely reasons, and tracks sleep, feeding, and crying patterns over time."
+    },
+    "app": {
+      "title": "Mother's app",
+      "description": "A daily companion for pregnancy, recovery, baby care, and speech development."
+    },
+    "community": {
+      "title": "Community",
+      "description": "A verified, pseudonymous community for mothers, moderated with AI assistance for safety."
+    },
+    "clinic": {
+      "title": "Clinic dashboard",
+      "description": "A dashboard for nurses and specialists to track mothers' and children's progress and flags."
+    }
+  },
+  "notFound": {
+    "eyebrow": "404",
+    "title": "Page not found",
+    "body": "The page you're looking for doesn't exist or has moved.",
+    "cta": "Back to home"
+  }
+}
