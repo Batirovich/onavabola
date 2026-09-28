@@ -14,7 +14,7 @@ export function RecoveryTab() {
   const [lastEpds, setLastEpds] = useState<{ score: number; date: Date } | null>(null);
 
   return (
-    <div className="space-y-4 p-4">
+    <div className="space-y-5 px-4 py-5">
       <Card title={t('app.recovery.epdsCardTitle')}>
         <p className="text-sm text-ink-600">{t('app.recovery.epdsCardBody')}</p>
         {lastEpds && (
@@ -25,7 +25,7 @@ export function RecoveryTab() {
         <button
           type="button"
           onClick={() => setEpdsOpen(true)}
-          className="mt-3 rounded-full bg-lapis-700 px-4 py-2 text-sm font-semibold text-white hover:bg-lapis-600"
+          className="mt-4 w-full rounded-2xl bg-lapis-700 py-3.5 text-base font-bold text-white shadow-[0_6px_16px_-6px_rgba(21,43,84,0.5)] transition-transform active:scale-[0.98]"
         >
           {t('app.recovery.epdsCta')}
         </button>

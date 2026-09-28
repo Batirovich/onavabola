@@ -1,5 +1,5 @@
-import { Baby, FastForward, Sun, Utensils } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { CryIcon, FastForwardIcon, FeedingIcon, WakingIcon } from '@/components/icons/BrandIcons';
 import { Panel } from '@/components/monitor/Panel';
 import { cn } from '@/lib/utils';
 
@@ -54,11 +54,11 @@ export function SimulateControls({
   return (
     <Panel title={t('monitor.simulate.title')} subtitle={t('monitor.simulate.subtitle')} className="no-print">
       <div className="flex flex-wrap gap-3">
-        <ControlButton icon={<Baby className="h-5 w-5" aria-hidden="true" />} label={t('monitor.simulate.cry')} onClick={onCry} disabled={cryDisabled} accent />
-        <ControlButton icon={<Sun className="h-5 w-5" aria-hidden="true" />} label={t('monitor.simulate.waking')} onClick={onWaking} />
-        <ControlButton icon={<Utensils className="h-5 w-5" aria-hidden="true" />} label={t('monitor.simulate.feeding')} onClick={onFeeding} />
+        <ControlButton icon={<CryIcon className="h-5 w-5" aria-hidden="true" />} label={t('monitor.simulate.cry')} onClick={onCry} disabled={cryDisabled} accent />
+        <ControlButton icon={<WakingIcon className="h-5 w-5" aria-hidden="true" />} label={t('monitor.simulate.waking')} onClick={onWaking} />
+        <ControlButton icon={<FeedingIcon className="h-5 w-5" aria-hidden="true" />} label={t('monitor.simulate.feeding')} onClick={onFeeding} />
         <ControlButton
-          icon={<FastForward className="h-5 w-5" aria-hidden="true" />}
+          icon={<FastForwardIcon className="h-5 w-5" aria-hidden="true" />}
           label={t('monitor.simulate.fastForward')}
           onClick={onFastForward}
           disabled={fastForwardDisabled}

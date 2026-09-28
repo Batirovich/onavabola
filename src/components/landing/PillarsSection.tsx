@@ -2,6 +2,7 @@ import { ArrowRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { DeviceIllustration } from '@/components/brand/DeviceIllustration';
+import { CommunityIcon, PregnancyIcon, RecoveryIcon, SpeechIcon } from '@/components/icons/BrandIcons';
 import { Section, SectionHeading } from '@/components/landing/Section';
 import { PILLARS } from '@/data/landing';
 import type { SupportedLanguage } from '@/i18n';
@@ -43,7 +44,9 @@ export function PillarsSection() {
           to={pregnancy.link}
           className="group rounded-3xl border border-lapis-200 bg-lapis-50 p-5 transition-transform hover:-translate-y-1 lg:col-start-1 lg:row-start-1"
         >
-          <span className="text-3xl">{pregnancy.emoji}</span>
+          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-lapis-700 text-white">
+            <PregnancyIcon className="h-5.5 w-5.5" />
+          </span>
           <p className="mt-3 font-display text-lg font-bold text-lapis-900">{pregnancy.title[lng]}</p>
           <p className="mt-1.5 text-sm leading-relaxed text-lapis-800/80">{pregnancy.body[lng]}</p>
         </Link>
@@ -53,7 +56,9 @@ export function PillarsSection() {
           to={recovery.link}
           className="group rounded-3xl border border-turquoise-200 bg-turquoise-50 p-5 transition-transform hover:-translate-y-1 lg:col-start-1 lg:row-start-2"
         >
-          <span className="text-3xl">{recovery.emoji}</span>
+          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-turquoise-600 text-white">
+            <RecoveryIcon className="h-5.5 w-5.5" />
+          </span>
           <p className="mt-3 font-display text-lg font-bold text-turquoise-900">{recovery.title[lng]}</p>
           <p className="mt-1.5 text-sm leading-relaxed text-turquoise-800/80">{recovery.body[lng]}</p>
         </Link>
@@ -63,7 +68,9 @@ export function PillarsSection() {
           to={speech.link}
           className="group rounded-3xl border border-apricot-200 bg-apricot-50 p-5 transition-transform hover:-translate-y-1 lg:col-start-4 lg:row-start-1"
         >
-          <span className="text-3xl">{speech.emoji}</span>
+          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-apricot-500 text-white">
+            <SpeechIcon className="h-5.5 w-5.5" />
+          </span>
           <p className="mt-3 font-display text-lg font-bold text-apricot-900">{speech.title[lng]}</p>
           <p className="mt-1.5 text-sm leading-relaxed text-apricot-800/80">{speech.body[lng]}</p>
         </Link>
@@ -73,7 +80,9 @@ export function PillarsSection() {
           to={community.link}
           className="group rounded-3xl border border-linen-300 bg-white p-5 transition-transform hover:-translate-y-1 lg:col-start-4 lg:row-start-2"
         >
-          <span className="text-3xl">{community.emoji}</span>
+          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-ink-900 text-white">
+            <CommunityIcon className="h-5.5 w-5.5" />
+          </span>
           <p className="mt-3 font-display text-lg font-bold text-ink-900">{community.title[lng]}</p>
           <p className="mt-1.5 text-sm leading-relaxed text-ink-600">{community.body[lng]}</p>
         </Link>

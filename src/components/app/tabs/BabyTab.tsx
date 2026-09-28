@@ -4,10 +4,10 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Line, LineChart, ResponsiveContainer, XAxis, YAxis } from 'recharts';
 import { Card } from '@/components/app/Card';
+import { ListGroup, ListRow } from '@/components/app/ListRow';
 import { GROWTH_DATA, GROWTH_MILESTONES, VACCINATIONS } from '@/data/babyCare';
 import type { SupportedLanguage } from '@/i18n';
 import { formatDate } from '@/lib/format';
-import { cn } from '@/lib/utils';
 
 export function BabyTab() {
   const { t, i18n } = useTranslation();
@@ -20,13 +20,13 @@ export function BabyTab() {
   }
 
   return (
-    <div className="space-y-4 p-4">
+    <div className="space-y-5 px-4 py-5">
       <Card title={t('app.baby.quickLogTitle')}>
         <div className="flex gap-3">
           <button
             type="button"
             onClick={() => log('feed')}
-            className="flex flex-1 flex-col items-center gap-1.5 rounded-xl border border-apricot-200 bg-apricot-50 py-3 text-sm font-semibold text-apricot-700 hover:bg-apricot-100"
+            className="flex flex-1 flex-col items-center gap-1.5 rounded-2xl bg-apricot-500 py-4 text-sm font-bold text-white shadow-[0_6px_16px_-6px_rgba(226,146,76,0.6)] transition-transform active:scale-[0.97]"
           >
             <Utensils className="h-5 w-5" aria-hidden="true" />
             {t('app.baby.logFeed')}
@@ -34,40 +34,45 @@ export function BabyTab() {
           <button
             type="button"
             onClick={() => log('sleep')}
-            className="flex flex-1 flex-col items-center gap-1.5 rounded-xl border border-lapis-200 bg-lapis-50 py-3 text-sm font-semibold text-lapis-700 hover:bg-lapis-100"
+            className="flex flex-1 flex-col items-center gap-1.5 rounded-2xl bg-lapis-700 py-4 text-sm font-bold text-white shadow-[0_6px_16px_-6px_rgba(21,43,84,0.5)] transition-transform active:scale-[0.97]"
           >
             <Moon className="h-5 w-5" aria-hidden="true" />
             {t('app.baby.logSleep')}
           </button>
         </div>
-        {logged && <p className="mt-2 text-center text-xs font-medium text-turquoise-600">{t('app.baby.logged')} ✓</p>}
-        <Link to="/monitor" className="mt-3 flex items-center justify-between rounded-xl bg-linen-100 px-3.5 py-2.5 text-sm font-semibold text-ink-700 hover:bg-linen-200">
+        {logged && <p className="mt-2.5 text-center text-xs font-medium text-turquoise-600">{t('app.baby.logged')} ✓</p>}
+        <Link
+          to="/monitor"
+          className="mt-3 flex items-center justify-between rounded-2xl bg-linen-100 px-4 py-3.5 text-sm font-semibold text-ink-700 active:bg-linen-200"
+        >
           {t('app.baby.viewMonitorStats')}
           <ChevronRight className="h-4 w-4" aria-hidden="true" />
         </Link>
       </Card>
 
       <Card title={t('app.baby.vaccinationTitle')}>
-        <ul className="space-y-2.5">
+        <ListGroup className="-mx-1 bg-transparent divide-linen-200">
           {VACCINATIONS.map((v) => (
-            <li key={v.id} className="flex items-center gap-3 text-sm">
-              {v.status === 'done' ? (
-                <CheckCircle2 className="h-5 w-5 shrink-0 text-turquoise-600" aria-hidden="true" />
-              ) : (
-                <Circle className="h-5 w-5 shrink-0 text-ink-500/40" aria-hidden="true" />
-              )}
-              <div className="flex-1">
-                <p className="font-medium text-ink-900">{v.name[lng]}</p>
-                <p className="text-xs text-ink-500">
-                  {v.ageLabel[lng]} · {formatDate(new Date(v.date), lng, { day: 'numeric', month: 'short' })}
-                </p>
-              </div>
-              <span className={cn('text-xs font-semibold', v.status === 'done' ? 'text-turquoise-600' : 'text-ink-500')}>
-                {v.status === 'done' ? t('app.baby.vaccinationDone') : t('app.baby.vaccinationUpcoming')}
-              </span>
-            </li>
+            <ListRow
+              key={v.id}
+              icon={
+                v.status === 'done' ? (
+                  <CheckCircle2 className="h-4.5 w-4.5" aria-hidden="true" />
+                ) : (
+                  <Circle className="h-4.5 w-4.5" aria-hidden="true" />
+                )
+              }
+              iconTone={v.status === 'done' ? 'turquoise' : 'lapis'}
+              title={v.name[lng]}
+              subtitle={`${v.ageLabel[lng]} · ${formatDate(new Date(v.date), lng, { day: 'numeric', month: 'short' })}`}
+              trailing={
+                <span className={v.status === 'done' ? 'font-semibold text-turquoise-600' : 'font-semibold text-ink-500'}>
+                  {v.status === 'done' ? t('app.baby.vaccinationDone') : t('app.baby.vaccinationUpcoming')}
+                </span>
+              }
+            />
           ))}
-        </ul>
+        </ListGroup>
       </Card>
 
       <Card title={t('app.baby.growthTitle')}>

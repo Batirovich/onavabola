@@ -16,8 +16,8 @@ export function PregnancyTab() {
   const upcomingTests = PREGNANCY_TESTS.filter((test) => test.weekTo >= week).slice(0, 3);
 
   return (
-    <div className="space-y-4 p-4">
-      <div className="rounded-2xl border border-apricot-200 bg-apricot-50 p-3 text-xs leading-relaxed text-apricot-800">
+    <div className="space-y-5 px-4 py-5">
+      <div className="rounded-2xl border border-apricot-200 bg-apricot-50 p-3.5 text-xs leading-relaxed text-apricot-800">
         {t('app.pregnancy.demoNotice')}
       </div>
 
@@ -86,7 +86,7 @@ export function PregnancyTab() {
         </ul>
         <button
           type="button"
-          className="mt-4 inline-flex items-center gap-2 rounded-full bg-rose-500 px-4 py-2 text-sm font-semibold text-white hover:bg-rose-600"
+          className="mt-4 flex w-full items-center justify-center gap-2 rounded-2xl bg-rose-500 py-3.5 text-base font-bold text-white shadow-[0_6px_16px_-6px_rgba(194,75,92,0.5)] transition-transform active:scale-[0.98]"
         >
           <Phone className="h-4 w-4" aria-hidden="true" />
           {t('app.pregnancy.callDoctor')}

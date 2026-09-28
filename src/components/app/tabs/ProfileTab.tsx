@@ -10,7 +10,7 @@ export function ProfileTab() {
   const lng = i18n.resolvedLanguage as SupportedLanguage;
 
   return (
-    <div className="space-y-4 p-4">
+    <div className="space-y-5 px-4 py-5">
       <div className="flex flex-col items-center py-2 text-center">
         <div className="flex h-16 w-16 items-center justify-center rounded-full bg-lapis-700 font-display text-2xl font-bold text-white">
           {MALIKA.pseudonym.charAt(0)}

@@ -43,12 +43,12 @@ export function VoiceRecorder() {
   }
 
   return (
-    <div className="rounded-xl bg-linen-100 p-4">
+    <div className="rounded-2xl bg-linen-100 p-4">
       <button
         type="button"
         onClick={recording ? stopRecording : startRecording}
-        className={`flex w-full items-center justify-center gap-2 rounded-full px-4 py-2.5 text-sm font-semibold text-white ${
-          recording ? 'bg-rose-500 hover:bg-rose-600' : 'bg-apricot-500 hover:bg-apricot-600'
+        className={`flex w-full items-center justify-center gap-2 rounded-2xl py-3.5 text-base font-bold text-white shadow-[0_6px_16px_-6px_rgba(18,23,42,0.35)] transition-transform active:scale-[0.98] ${
+          recording ? 'bg-rose-500' : 'bg-apricot-500'
         }`}
       >
         {recording ? <Square className="h-4 w-4" aria-hidden="true" /> : <Mic className="h-4 w-4" aria-hidden="true" />}

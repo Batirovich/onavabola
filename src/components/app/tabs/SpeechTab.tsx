@@ -34,7 +34,7 @@ export function SpeechTab() {
   const [openGame, setOpenGame] = useState<string | null>(null);
 
   return (
-    <div className="space-y-4 p-4">
+    <div className="space-y-5 px-4 py-5">
       <div className="rounded-2xl border border-apricot-200 bg-apricot-50 p-3 text-xs leading-relaxed text-apricot-800">
         {lng === 'uz'
           ? `Bu boshqa demo profil — ${DILNOZA.name}, ${MADINA.name} (3 yosh) onasi.`
