@@ -216,6 +216,70 @@
       "notReviewed": "Avtomatik"
     }
   },
+  "clinic": {
+    "subtitle": "{{district}} — hamshira va mutaxassislar paneli",
+    "kpi": {
+      "registeredMothers": "Roʻyxatdagi onalar",
+      "pregnancies": "Homiladorlar (trimestr boʻyicha)",
+      "missedVisits": "Bu hafta oʻtkazib yuborilgan tashriflar",
+      "epdsFlags": "EPDS xavf belgilari",
+      "speechDelayFlags": "Nutqda kechikish belgilari",
+      "activeMonitors": "Faol monitorlar"
+    },
+    "tabs": {
+      "mothers": "Onalar",
+      "speech": "Nutq terapevti"
+    },
+    "map": {
+      "title": "Hudud qamrovi",
+      "subtitle": "Demo uchun soddalashtirilgan sxema — haqiqiy xarita emas.",
+      "pilot": "Pilot hudud",
+      "planned": "Rejalashtirilgan",
+      "none": "Hali yoʻq"
+    },
+    "mothers": {
+      "filterMahalla": "Mahalla",
+      "filterStatus": "Holat",
+      "allMahallas": "Barcha mahallalar",
+      "allStatuses": "Barcha holatlar",
+      "code": "Kod",
+      "name": "Ism",
+      "mahalla": "Mahalla",
+      "status": "Holat",
+      "nextVisit": "Keyingi tashrif",
+      "flags": "Belgilar",
+      "noResults": "Hech narsa topilmadi",
+      "statusValues": {
+        "pregnant": "Homilador",
+        "postpartum": "Tugʻruqdan keyin",
+        "raisingChild": "Bola tarbiyalayapti"
+      },
+      "flagValues": {
+        "epds": "EPDS xavfi",
+        "missedVisit": "Oʻtkazib yuborilgan",
+        "speechDelay": "Nutq kechikishi"
+      }
+    },
+    "drawer": {
+      "visitHistory": "Tashriflar tarixi",
+      "epdsHistory": "EPDS natijalari",
+      "monitorSummary": "Monitor xulosasi (haftalik)",
+      "notes": "Eslatmalar",
+      "close": "Yopish",
+      "avgSleep": "Oʻrtacha uyqu",
+      "criesPerDay": "Kunlik yigʻi",
+      "topReason": "Asosiy sabab",
+      "noMonitor": "Bu oila monitordan foydalanmayapti"
+    },
+    "speech": {
+      "childrenTitle": "Bolalar roʻyxati",
+      "reviewQueueTitle": "Koʻrib chiqish navbati",
+      "noPending": "Koʻrib chiqiladigan yozuv yoʻq",
+      "assignedExercises": "Tayinlangan mashqlar",
+      "progress": "Rivojlanish",
+      "delayFlag": "Kechikish belgisi"
+    }
+  },
   "monitor": {
     "deviceStatus": {
       "online": "Onlayn",

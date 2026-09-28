@@ -216,6 +216,70 @@
       "notReviewed": "Automatic"
     }
   },
+  "clinic": {
+    "subtitle": "{{district}} — nurse & specialist dashboard",
+    "kpi": {
+      "registeredMothers": "Registered mothers",
+      "pregnancies": "Pregnancies by trimester",
+      "missedVisits": "Missed visits this week",
+      "epdsFlags": "EPDS risk flags",
+      "speechDelayFlags": "Speech-delay flags",
+      "activeMonitors": "Active monitors"
+    },
+    "tabs": {
+      "mothers": "Mothers",
+      "speech": "Speech therapist"
+    },
+    "map": {
+      "title": "Regional coverage",
+      "subtitle": "Simplified for this demo — not an accurate map.",
+      "pilot": "Pilot region",
+      "planned": "Planned",
+      "none": "Not yet"
+    },
+    "mothers": {
+      "filterMahalla": "Mahalla",
+      "filterStatus": "Status",
+      "allMahallas": "All mahallas",
+      "allStatuses": "All statuses",
+      "code": "Code",
+      "name": "Name",
+      "mahalla": "Mahalla",
+      "status": "Status",
+      "nextVisit": "Next visit",
+      "flags": "Flags",
+      "noResults": "No results found",
+      "statusValues": {
+        "pregnant": "Pregnant",
+        "postpartum": "Postpartum",
+        "raisingChild": "Raising a child"
+      },
+      "flagValues": {
+        "epds": "EPDS risk",
+        "missedVisit": "Missed visit",
+        "speechDelay": "Speech delay"
+      }
+    },
+    "drawer": {
+      "visitHistory": "Visit history",
+      "epdsHistory": "EPDS scores",
+      "monitorSummary": "Monitor summary (weekly)",
+      "notes": "Notes",
+      "close": "Close",
+      "avgSleep": "Average sleep",
+      "criesPerDay": "Cries per day",
+      "topReason": "Top reason",
+      "noMonitor": "This family isn't using the monitor"
+    },
+    "speech": {
+      "childrenTitle": "Children",
+      "reviewQueueTitle": "Review queue",
+      "noPending": "No recordings waiting for review",
+      "assignedExercises": "Assigned exercises",
+      "progress": "Progress",
+      "delayFlag": "Delay flag"
+    }
+  },
   "monitor": {
     "deviceStatus": {
       "online": "Online",
