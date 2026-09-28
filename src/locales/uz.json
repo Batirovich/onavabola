@@ -280,6 +280,52 @@
       "delayFlag": "Kechikish belgisi"
     }
   },
+  "landing": {
+    "hero": {
+      "title": "Homiladorlikdan 7 yoshgacha — onalar va bolalar uchun aqlli yordamchi",
+      "subtitle": "Ona va Bola beshik yonidagi aqlli monitor, oylik parvarish ilovasi va xavfsiz hamjamiyatni birlashtirib, onalarga har bosqichda yordam beradi.",
+      "ctaMonitor": "Monitorni sinab koʻring",
+      "ctaApp": "Ilovani koʻrish",
+      "playCry": "Chaqaloq yigʻisini eshitib koʻring",
+      "muteToggle": "Ovoz",
+      "notification": "Aziz yigʻlayapti"
+    },
+    "problem": {
+      "title": "Onaning yoʻlidagi boʻshliqlar",
+      "subtitle": "Homiladorlikdan maktabgacha boʻlgan davrda onalar koʻplab bosqichlarda yolgʻiz qoladi."
+    },
+    "pillars": {
+      "title": "Beshta asosiy yoʻnalish",
+      "subtitle": "Har biri onaning yoʻlidagi muhim bir bosqichga xizmat qiladi.",
+      "cta": "Batafsil"
+    },
+    "learning": {
+      "title": "Monitor qanday oʻrganadi",
+      "subtitle": "Uch signal — ovoz, kontekst va onaning fikri — birlashib, 21 kun ichida aniq tushunishga aylanadi.",
+      "day": "kun"
+    },
+    "healthSystem": {
+      "title": "Sogʻliqni saqlash tizimi uchun",
+      "subtitle": "Hamshiralar va mutaxassislar onalar va bolalar holatini bir joydan kuzatishadi — oʻtkazib yuborilgan tashriflar, xavf belgilari va rivojlanish.",
+      "cta": "Klinika panelini koʻrish"
+    },
+    "whyDifferent": {
+      "title": "Nima uchun boshqacha"
+    },
+    "business": {
+      "title": "Biznes modeli"
+    },
+    "roadmap": {
+      "title": "Yoʻl xaritasi"
+    },
+    "team": {
+      "title": "Jamoa va hamkorlar",
+      "subtitle": "Toʻliq jamoa tarkibi hozircha shakllanmoqda."
+    },
+    "safety": {
+      "title": "Xavfsizlik va maxfiylik"
+    }
+  },
   "monitor": {
     "deviceStatus": {
       "online": "Onlayn",

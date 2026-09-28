@@ -1,14 +1,30 @@
-import { useTranslation } from 'react-i18next';
+import { BusinessModelSection } from '@/components/landing/BusinessModelSection';
+import { HealthSystemSection } from '@/components/landing/HealthSystemSection';
+import { Hero } from '@/components/landing/Hero';
+import { MonitorLearningSection } from '@/components/landing/MonitorLearningSection';
+import { PillarsSection } from '@/components/landing/PillarsSection';
+import { ProblemTimeline } from '@/components/landing/ProblemTimeline';
+import { RoadmapSection } from '@/components/landing/RoadmapSection';
+import { SafetySection } from '@/components/landing/SafetySection';
+import { TeamSection } from '@/components/landing/TeamSection';
+import { WhyDifferentSection } from '@/components/landing/WhyDifferentSection';
 import { usePageMeta } from '@/lib/usePageMeta';
 
 export function Landing() {
-  const { t } = useTranslation();
   usePageMeta('meta.home.title', 'meta.home.description');
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-24 text-center sm:px-6">
-      <h1 className="font-display text-4xl font-bold text-(--fg) sm:text-5xl">{t('meta.home.title')}</h1>
-      <p className="mt-4 text-(--fg-muted)">{t('meta.home.description')}</p>
+    <div>
+      <Hero />
+      <ProblemTimeline />
+      <PillarsSection />
+      <MonitorLearningSection />
+      <HealthSystemSection />
+      <WhyDifferentSection />
+      <BusinessModelSection />
+      <RoadmapSection />
+      <TeamSection />
+      <SafetySection />
     </div>
   );
 }

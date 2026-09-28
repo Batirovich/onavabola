@@ -280,6 +280,52 @@
       "delayFlag": "Delay flag"
     }
   },
+  "landing": {
+    "hero": {
+      "title": "From pregnancy to age 7 — a smart companion for mothers and children",
+      "subtitle": "Ona va Bola brings together a bedside smart monitor, a daily care app, and a safe community to support mothers at every stage.",
+      "ctaMonitor": "Try the monitor",
+      "ctaApp": "See the app",
+      "playCry": "Hear a baby's cry",
+      "muteToggle": "Sound",
+      "notification": "Aziz is crying"
+    },
+    "problem": {
+      "title": "The gaps in a mother's journey",
+      "subtitle": "From pregnancy to school age, mothers are left on their own at too many stages."
+    },
+    "pillars": {
+      "title": "Five pillars",
+      "subtitle": "Each one supports a key stage of a mother's journey.",
+      "cta": "Learn more"
+    },
+    "learning": {
+      "title": "How the monitor learns",
+      "subtitle": "Three signals — sound, context, and mother's feedback — combine into clear understanding over 21 days.",
+      "day": "day"
+    },
+    "healthSystem": {
+      "title": "For the health system",
+      "subtitle": "Nurses and specialists track mothers and children from one place — missed visits, risk flags, and progress.",
+      "cta": "See the clinic dashboard"
+    },
+    "whyDifferent": {
+      "title": "Why it's different"
+    },
+    "business": {
+      "title": "Business model"
+    },
+    "roadmap": {
+      "title": "Roadmap"
+    },
+    "team": {
+      "title": "Team & partners",
+      "subtitle": "The full team is still forming."
+    },
+    "safety": {
+      "title": "Safety & privacy"
+    }
+  },
   "monitor": {
     "deviceStatus": {
       "online": "Online",
