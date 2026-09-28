@@ -111,17 +111,20 @@ export function predictReasons(
   confidence: number,
   bias?: CryReason,
 ): ReasonProbability[] {
+  // Baseline priors reflect real-world base rates (hunger is the most common
+  // cause) so the distribution isn't flat even without a strong contextual
+  // trigger; each condition then scales its reason further.
   const weights: Record<CryReason, number> = {
-    hunger: context.timeSinceLastFeedMin > 150 ? 3 : 1,
-    painGas: context.sleptBeforeMin < 20 ? 2.4 : 1,
-    sleepy: context.hour >= 19 || context.hour <= 6 ? 2.2 : 1,
+    hunger: (context.timeSinceLastFeedMin > 150 ? 3.5 : 1.6),
+    painGas: (context.sleptBeforeMin < 20 ? 2.5 : 0.9),
+    sleepy: (context.hour >= 19 || context.hour <= 6 ? 2.3 : 1.3),
     wantsHeld: 1.2,
     diaper: 1,
-    discomfort: 0.8,
+    discomfort: 0.7,
   };
   if (bias) weights[bias] *= 2.5;
 
-  const sharpness = 0.6 + (confidence / 100) * 1.8;
+  const sharpness = 1 + (confidence / 100) * 1.6;
   const scored = CRY_REASONS.map((reason) => ({ reason, score: weights[reason] ** sharpness }));
   const total = scored.reduce((s, r) => s + r.score, 0);
   return scored

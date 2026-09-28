@@ -57,6 +57,94 @@
       "description": "Hamshira va mutaxassislar uchun onalar va bolalar holatini kuzatuvchi boshqaruv paneli."
     }
   },
+  "monitor": {
+    "deviceStatus": {
+      "online": "Onlayn",
+      "offline": "Oflayn",
+      "powered": "Quvvatlanmoqda",
+      "wifi": "Wi-Fi",
+      "roomTemp": "Xona harorati",
+      "humidity": "Namlik",
+      "onDeviceBadge": "Audio qurilmaning oʻzida qayta ishlanadi",
+      "lastSync": "Oxirgi sinxronizatsiya",
+      "minutesAgo": "{{count}} daqiqa oldin"
+    },
+    "liveView": {
+      "title": "Jonli koʻrinish",
+      "sleeping": "Uxlayapti",
+      "awake": "Uygʻoq",
+      "crying": "Yigʻlayapti",
+      "since": "beri"
+    },
+    "simulate": {
+      "title": "Demo boshqaruvi",
+      "subtitle": "Namoyish uchun tugmalar — haqiqiy qurilma bu holatlarni oʻzi aniqlaydi.",
+      "cry": "Yigʻini simulyatsiya qilish",
+      "waking": "Uygʻonishni simulyatsiya qilish",
+      "feeding": "Ovqatlantirishni simulyatsiya qilish",
+      "fastForward": "21 kunga oldinga siljitish",
+      "feedLogged": "Ovqatlantirish qayd etildi"
+    },
+    "alert": {
+      "notification": "Aziz yigʻlayapti",
+      "analyzing": "Tahlil qilinmoqda…",
+      "likelyReasons": "Ehtimoliy sabablar",
+      "context": "Kontekst",
+      "lastFeed": "Oxirgi ovqatlantirish: {{time}} oldin",
+      "sleptFor": "Uxlagan vaqti: {{duration}}",
+      "checklist": "Tekshirish roʻyxati",
+      "whatWasIt": "Bu nima edi?",
+      "feedbackNote": "Javobingiz Azizning namunasini yaxshiroq tushunishga yordam beradi.",
+      "thanks": "Rahmat! Bu bildirishnoma yopiladi.",
+      "close": "Yopish",
+      "calmedIn": "{{minutes}} daqiqada tinchlandi"
+    },
+    "learning": {
+      "title": "Oʻrganish jarayoni",
+      "dayOf": "{{day}}-kun / 21",
+      "learningLabel": "Azizning namunasi oʻrganilmoqda",
+      "learned": "Azizning namunasi oʻrganildi",
+      "confidence": "Model ishonchliligi",
+      "signalsTitle": "Uch signal asosida",
+      "signals": {
+        "sound": { "title": "Ovoz", "body": "Yigʻi ohangi va tembri tahlil qilinadi." },
+        "context": { "title": "Kontekst", "body": "Ovqatlantirish, uyqu va kun vaqti hisobga olinadi." },
+        "feedback": { "title": "Onaning fikri", "body": "Har bir yigʻidan keyingi javobingiz modelni oʻqitadi." }
+      }
+    },
+    "insights": {
+      "title": "Shaxsiy tavsiyalar"
+    },
+    "stats": {
+      "title": "Statistika",
+      "timeline": "Bugungi 24 soat",
+      "timelineLegend": { "night": "Tungi uyqu", "nap": "Kunduzgi uyqu", "feed": "Ovqatlantirish", "cry": "Yigʻi" },
+      "heatmap": "21 kunlik yigʻi xaritasi",
+      "heatmapNote": "Har bir katak shu soatdagi yigʻi holatlari sonini bildiradi.",
+      "sleep": "Kunlik uyqu",
+      "sleepNight": "Tungi",
+      "sleepNap": "Kunduzgi",
+      "feeds": "Ovqatlantirishlar",
+      "feedsPerDay": "kun / ovqatlantirish",
+      "avgInterval": "Oʻrtacha oraliq",
+      "cryReasons": "Yigʻi sabablari (ona tasdiqlagan)",
+      "avgCalm": "Tinchlanish uchun oʻrtacha vaqt",
+      "minutes": "daqiqa"
+    },
+    "family": {
+      "title": "Oila aʼzolari",
+      "subtitle": "Bildirishnoma kimlarga yuborilishini tanlang"
+    },
+    "doctorReport": {
+      "cta": "Pediatrga ulashish",
+      "title": "Haftalik hisobot",
+      "subtitle": "Aziz uchun — {{range}}",
+      "print": "Chop etish",
+      "close": "Yopish",
+      "summaryTitle": "Umumiy koʻrsatkichlar",
+      "generatedFor": "Tayyorlandi: Dr. uchun, Ona va Bola tibbiy hamkori"
+    }
+  },
   "notFound": {
     "eyebrow": "404",
     "title": "Sahifa topilmadi",

@@ -57,6 +57,94 @@
       "description": "A dashboard for nurses and specialists to track mothers' and children's progress and flags."
     }
   },
+  "monitor": {
+    "deviceStatus": {
+      "online": "Online",
+      "offline": "Offline",
+      "powered": "Powered",
+      "wifi": "Wi-Fi",
+      "roomTemp": "Room temperature",
+      "humidity": "Humidity",
+      "onDeviceBadge": "Audio processed on the device",
+      "lastSync": "Last sync",
+      "minutesAgo": "{{count}} min ago"
+    },
+    "liveView": {
+      "title": "Live view",
+      "sleeping": "Sleeping",
+      "awake": "Awake",
+      "crying": "Crying",
+      "since": "for"
+    },
+    "simulate": {
+      "title": "Demo controls",
+      "subtitle": "Buttons for this demo — the real device detects these states on its own.",
+      "cry": "Simulate cry",
+      "waking": "Simulate waking",
+      "feeding": "Simulate feeding",
+      "fastForward": "Fast-forward 21 days",
+      "feedLogged": "Feed logged"
+    },
+    "alert": {
+      "notification": "Aziz is crying",
+      "analyzing": "Analyzing…",
+      "likelyReasons": "Likely reasons",
+      "context": "Context",
+      "lastFeed": "Last feed: {{time}} ago",
+      "sleptFor": "Slept for: {{duration}}",
+      "checklist": "Checklist",
+      "whatWasIt": "What was it?",
+      "feedbackNote": "Your answer helps the model understand Aziz's patterns better.",
+      "thanks": "Thanks! This alert will now close.",
+      "close": "Close",
+      "calmedIn": "Calmed in {{minutes}} min"
+    },
+    "learning": {
+      "title": "Learning progress",
+      "dayOf": "Day {{day}} of 21",
+      "learningLabel": "Learning Aziz's patterns",
+      "learned": "Aziz's patterns are learned",
+      "confidence": "Model confidence",
+      "signalsTitle": "Based on three signals",
+      "signals": {
+        "sound": { "title": "Sound", "body": "The pitch and tone of the cry are analyzed." },
+        "context": { "title": "Context", "body": "Time since feeding, sleep, and time of day are factored in." },
+        "feedback": { "title": "Mother's feedback", "body": "Your answer after each cry trains the model." }
+      }
+    },
+    "insights": {
+      "title": "Personal insights"
+    },
+    "stats": {
+      "title": "Statistics",
+      "timeline": "Today, 24 hours",
+      "timelineLegend": { "night": "Night sleep", "nap": "Nap", "feed": "Feed", "cry": "Cry" },
+      "heatmap": "21-day cry map",
+      "heatmapNote": "Each cell shows how many cries happened in that hour.",
+      "sleep": "Sleep per day",
+      "sleepNight": "Night",
+      "sleepNap": "Nap",
+      "feeds": "Feeds",
+      "feedsPerDay": "per day",
+      "avgInterval": "Average interval",
+      "cryReasons": "Cry reasons (confirmed by mother)",
+      "avgCalm": "Average time to calm",
+      "minutes": "min"
+    },
+    "family": {
+      "title": "Family alerts",
+      "subtitle": "Choose who receives notifications"
+    },
+    "doctorReport": {
+      "cta": "Share with pediatrician",
+      "title": "Weekly report",
+      "subtitle": "For Aziz — {{range}}",
+      "print": "Print",
+      "close": "Close",
+      "summaryTitle": "Summary",
+      "generatedFor": "Prepared for your doctor, via Ona va Bola"
+    }
+  },
   "notFound": {
     "eyebrow": "404",
     "title": "Page not found",
