@@ -18,13 +18,16 @@
     "comingSoon": "Coming soon"
   },
   "nav": {
-    "home": "Home",
+    "story": "Story",
+    "demos": "Demos",
+    "jury": "For jury",
     "monitor": "Monitor",
     "app": "App",
     "community": "Community",
     "clinic": "Clinic dashboard",
     "menu": "Menu",
-    "closeMenu": "Close menu"
+    "closeMenu": "Close menu",
+    "backToStory": "Back to the story"
   },
   "footer": {
     "tagline": "For mothers and children — with you from pregnancy to age 7.",
@@ -55,6 +58,10 @@
     "clinic": {
       "title": "Clinic dashboard",
       "description": "A dashboard for nurses and specialists to track mothers' and children's progress and flags."
+    },
+    "jury": {
+      "title": "For jury",
+      "description": "The problem, the solution, the business model, the roadmap, and safety — everything for jury members and investors."
     }
   },
   "app": {

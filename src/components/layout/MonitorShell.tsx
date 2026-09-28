@@ -19,7 +19,7 @@ export function MonitorShell({ children }: { children: ReactNode }) {
         <div className="mx-auto flex h-16 max-w-[1600px] items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
           <Link to="/" className="flex items-center gap-2 text-sm font-semibold text-night-50 hover:text-white">
             <ArrowLeft className="h-4 w-4" aria-hidden="true" />
-            {t('nav.home')}
+            {t('nav.backToStory')}
           </Link>
           <Wordmark className="[&_span:last-child]:text-white" />
           <div className="flex items-center gap-3">

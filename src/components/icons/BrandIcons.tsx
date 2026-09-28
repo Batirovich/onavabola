@@ -144,3 +144,13 @@ export function FastForwardIcon(props: IconProps) {
     </Base>
   );
 }
+
+export function ClinicIcon(props: IconProps) {
+  return (
+    <Base {...props}>
+      <rect x="4" y="4" width="16" height="16" rx="3" />
+      <path d="M8 15.5l2.4-4 2 2.5L15.5 9" />
+      <circle cx="15.5" cy="9" r="1" fill="currentColor" stroke="none" />
+    </Base>
+  );
+}

@@ -18,13 +18,16 @@
     "comingSoon": "Tez orada"
   },
   "nav": {
-    "home": "Bosh sahifa",
+    "story": "Hikoya",
+    "demos": "Demolar",
+    "jury": "Hakamlar uchun",
     "monitor": "Monitor",
     "app": "Ilova",
     "community": "Hamjamiyat",
     "clinic": "Klinika paneli",
     "menu": "Menyu",
-    "closeMenu": "Menyuni yopish"
+    "closeMenu": "Menyuni yopish",
+    "backToStory": "Hikoyaga qaytish"
   },
   "footer": {
     "tagline": "Onalar va bolalar uchun — homiladorlikdan 7 yoshgacha yoningizdamiz.",
@@ -55,6 +58,10 @@
     "clinic": {
       "title": "Klinika paneli",
       "description": "Hamshira va mutaxassislar uchun onalar va bolalar holatini kuzatuvchi boshqaruv paneli."
+    },
+    "jury": {
+      "title": "Hakamlar uchun",
+      "description": "Muammo, yechim, biznes modeli, yoʻl xaritasi va xavfsizlik — hakamlar va investorlar uchun toʻliq maʼlumot."
     }
   },
   "app": {

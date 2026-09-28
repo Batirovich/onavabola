@@ -94,3 +94,6 @@ A dedicated slide deck, not a hijacked scroll position — `/monitor`'s night sc
 ## 9. Process notes (filled in as sections are built)
 
 Per-section screenshot critiques live here as they happen, most recent last. Each entry: what the screenshot showed, what was cut/fixed, why.
+
+### Header (§4)
+Screenshot at 1440px showed the new one-row header exactly as planned — logo, Hikoya, Demolar (dropdown), Hakamlar uchun, then demo badge/language/theme grouped quietly at the end. One real fix: the "Onalar ilovasi" (mother's app) demo-menu item first used the speech-bubble icon reused from elsewhere in the codebase — misleading, since that icon means "speech development," a single sub-feature of the app, not the app itself. Swapped to `BabyTabIcon` (a simple figure), which reads correctly as "the whole mother-and-baby app." Mobile menu screenshot confirmed the mobile hamburger panel groups the four demos under a quiet "Demolar" label with icons, matches the desktop dropdown's content. `/monitor`'s existing back-link now reads "Hikoyaga qaytish" instead of "Bosh sahifa," matching the brief's exact phrasing for the back-to-story links the other three demo pages will get in the polish pass (§8).
