@@ -222,14 +222,40 @@ export const ROADMAP: RoadmapStep[] = [
 export interface TeamMember {
   id: string;
   role: Bilingual;
-  placeholder: Bilingual;
+  /** What this role contributes — no named team is announced yet, so this describes the expertise rather than a person. */
+  contribution: Bilingual;
 }
 
 export const TEAM: TeamMember[] = [
-  { id: 'lead', role: { uz: 'Loyiha yetakchisi', en: 'Project lead' }, placeholder: { uz: 'Ismingiz shu yerda', en: 'Your name here' } },
-  { id: 'pediatrician', role: { uz: 'Pediatr maslahatchi', en: 'Pediatrician advisor' }, placeholder: { uz: 'Ismingiz shu yerda', en: 'Your name here' } },
-  { id: 'speechTherapist', role: { uz: 'Nutq terapevti maslahatchi', en: 'Speech therapist advisor' }, placeholder: { uz: 'Ismingiz shu yerda', en: 'Your name here' } },
-  { id: 'nutritionist', role: { uz: 'Ovqatlanish boʻyicha maslahatchi', en: 'Nutritionist advisor' }, placeholder: { uz: 'Ismingiz shu yerda', en: 'Your name here' } },
+  {
+    id: 'lead',
+    role: { uz: 'Loyiha yetakchisi', en: 'Project lead' },
+    contribution: { uz: 'Mahsulot va ijro ustidan umumiy nazorat.', en: 'Overall oversight of product and execution.' },
+  },
+  {
+    id: 'pediatrician',
+    role: { uz: 'Pediatr maslahatchi', en: 'Pediatrician advisor' },
+    contribution: {
+      uz: 'Yigʻi sabablari toifalari va xavfsizlik xabarlarini koʻrib chiqadi.',
+      en: 'Reviews the cry-reason categories and safety messaging.',
+    },
+  },
+  {
+    id: 'speechTherapist',
+    role: { uz: 'Nutq terapevti maslahatchi', en: 'Speech therapist advisor' },
+    contribution: {
+      uz: 'Nutq rivoji mashqlari va bosqichlarini ishlab chiqadi.',
+      en: 'Designs the speech-development exercises and milestones.',
+    },
+  },
+  {
+    id: 'nutritionist',
+    role: { uz: 'Ovqatlanish boʻyicha maslahatchi', en: 'Nutritionist advisor' },
+    contribution: {
+      uz: 'Tiklanish davri uchun oʻzbek taomlariga asoslangan tavsiyalarni tayyorlaydi.',
+      en: 'Prepares Uzbek-cuisine-based recovery nutrition guidance.',
+    },
+  },
 ];
 
 export const SAFETY_POINTS: Bilingual[] = [
