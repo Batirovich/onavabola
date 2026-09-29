@@ -4,12 +4,13 @@ import { useTranslation } from 'react-i18next';
 import { GeometricAvatar } from '@/components/community/GeometricAvatar';
 import type { CommunityPost } from '@/data/community';
 import { CHANNELS } from '@/data/community';
+import { TODAY } from '@/data/profiles';
 import { regionName } from '@/data/regions';
 import type { SupportedLanguage } from '@/i18n';
 import { cn } from '@/lib/utils';
 
 function timeAgo(iso: string, lng: SupportedLanguage): string {
-  const diffMs = Date.now() - new Date(iso).getTime();
+  const diffMs = TODAY.getTime() - new Date(iso).getTime();
   const days = Math.floor(diffMs / 86400000);
   if (days <= 0) return lng === 'uz' ? 'bugun' : 'today';
   if (days === 1) return lng === 'uz' ? 'kecha' : 'yesterday';

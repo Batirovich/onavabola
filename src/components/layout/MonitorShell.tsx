@@ -23,7 +23,9 @@ export function MonitorShell({ children }: { children: ReactNode }) {
           </Link>
           <Wordmark className="[&_span:last-child]:text-white" />
           <div className="flex items-center gap-3">
-            <DemoBadge className="hidden border-white/15 bg-white/5 text-night-50 sm:inline-flex" />
+            <div className="hidden sm:block">
+              <DemoBadge className="border-white/15 bg-white/5 text-night-50" />
+            </div>
             <LanguageSwitch className="border-white/15 bg-white/5" />
           </div>
         </div>
