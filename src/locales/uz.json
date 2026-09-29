@@ -21,10 +21,7 @@
     "story": "Hikoya",
     "demos": "Demolar",
     "jury": "Hakamlar uchun",
-    "monitor": "Monitor",
     "app": "Ilova",
-    "community": "Hamjamiyat",
-    "clinic": "Klinika paneli",
     "menu": "Menyu",
     "closeMenu": "Menyuni yopish",
     "backToStory": "Hikoyaga qaytish"
@@ -34,7 +31,6 @@
     "demoNotice": "Bu InnoWeek.Uz–2026 koʻrgazmasi uchun tayyorlangan demo. Barcha maʼlumotlar oʻylab topilgan boʻlib, haqiqiy foydalanuvchilarga tegishli emas.",
     "rights": "© 2026 Ona va Bola. Barcha huquqlar himoyalangan.",
     "sections": {
-      "product": "Mahsulot",
       "resources": "Maʼlumot"
     }
   },
@@ -412,6 +408,11 @@
         "monitors": "{{count}} tasi monitordan foydalanadi"
       },
       "cta": "Klinika panelini koʻring"
+    },
+    "closing": {
+      "line": "Har bir tunni birga oʻtkazamiz — birinchi yigʻidan tinch tongga qadar.",
+      "seeMonitor": "Monitorni sinab koʻring",
+      "forJury": "Hakamlar uchun toʻliq maʼlumot"
     }
   },
   "monitor": {

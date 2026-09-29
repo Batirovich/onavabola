@@ -21,10 +21,7 @@
     "story": "Story",
     "demos": "Demos",
     "jury": "For jury",
-    "monitor": "Monitor",
     "app": "App",
-    "community": "Community",
-    "clinic": "Clinic dashboard",
     "menu": "Menu",
     "closeMenu": "Close menu",
     "backToStory": "Back to the story"
@@ -34,7 +31,6 @@
     "demoNotice": "This is a demo built for the InnoWeek.Uz–2026 exhibition. All data is fictional and does not belong to real users.",
     "rights": "© 2026 Ona va Bola. All rights reserved.",
     "sections": {
-      "product": "Product",
       "resources": "Resources"
     }
   },
@@ -412,6 +408,11 @@
         "monitors": "{{count}} use the monitor"
       },
       "cta": "See the clinic dashboard"
+    },
+    "closing": {
+      "line": "We're with you through every night — from the first cry to a calm morning.",
+      "seeMonitor": "Try the monitor",
+      "forJury": "Full details for jury"
     }
   },
   "monitor": {
