@@ -402,6 +402,16 @@
         "title": "Har bir xabar tekshiriladi",
         "cta": "Xabarni tekshirib koʻring"
       }
+    },
+    "trust": {
+      "title": "Shifokorlar bilan birga qurilgan",
+      "subtitle": "Har bir maslahat va ogohlantirish amaliyotchi shifokorlar bilan tekshirilgan. Maxfiylik va xavfsizlik — loyihaning markazida.",
+      "clinicKpi": {
+        "title": "Hamshiralar panelida",
+        "mothers": "{{count}} ona roʻyxatda",
+        "monitors": "{{count}} tasi monitordan foydalanadi"
+      },
+      "cta": "Klinika panelini koʻring"
     }
   },
   "monitor": {

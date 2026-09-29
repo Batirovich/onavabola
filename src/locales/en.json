@@ -402,6 +402,16 @@
         "title": "Every message gets checked",
         "cta": "Check this message"
       }
+    },
+    "trust": {
+      "title": "Built with doctors",
+      "subtitle": "Every tip and alert has been checked with practicing clinicians. Privacy and safety sit at the center of the design.",
+      "clinicKpi": {
+        "title": "On one nurse's dashboard",
+        "mothers": "{{count}} mothers registered",
+        "monitors": "{{count}} use the monitor"
+      },
+      "cta": "See the clinic dashboard"
     }
   },
   "monitor": {
