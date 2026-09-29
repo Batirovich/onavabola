@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { FileText } from 'lucide-react';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { DeviceIllustration } from '@/components/brand/DeviceIllustration';
 import { CryAlertOverlay } from '@/components/monitor/CryAlertOverlay';
 import { CryHeatmap } from '@/components/monitor/CryHeatmap';
 import { CryReasonsChart } from '@/components/monitor/CryReasonsChart';
@@ -15,7 +16,6 @@ import { LiveView } from '@/components/monitor/LiveView';
 import { SimulateControls } from '@/components/monitor/SimulateControls';
 import { SleepChart } from '@/components/monitor/SleepChart';
 import { Timeline24h } from '@/components/monitor/Timeline24h';
-import deviceScene from '@/assets/monitor-device-scene.webp';
 import { LEARNING_WINDOW_DAYS } from '@/data/monitor';
 import { useMonitorDemo } from '@/hooks/useMonitorDemo';
 import { MonitorShell } from '@/components/layout/MonitorShell';
@@ -36,13 +36,7 @@ export function Monitor() {
             <p className="font-display text-3xl font-bold text-white sm:text-4xl">{t('meta.monitor.title')}</p>
             <p className="mt-3 text-sm leading-relaxed text-night-50 sm:text-base">{t('meta.monitor.description')}</p>
           </div>
-          <img
-            src={deviceScene}
-            alt=""
-            aria-hidden="true"
-            className="h-56 w-auto shrink-0 select-none sm:h-64 md:h-72"
-            draggable={false}
-          />
+          <DeviceIllustration state="idle" className="h-56 w-auto shrink-0 sm:h-64 md:h-72" />
         </div>
       </div>
 
