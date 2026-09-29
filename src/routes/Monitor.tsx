@@ -70,6 +70,8 @@ export function Monitor() {
           fastForwardDisabled={state.fastForwarding || state.learningDay >= LEARNING_WINDOW_DAYS}
         />
 
+        <Timeline24h />
+
         <div className="grid gap-6 lg:grid-cols-2">
           <LearningProgress learningDay={state.learningDay} confidence={state.confidence} />
           <InsightsList />
@@ -78,7 +80,6 @@ export function Monitor() {
         <div>
           <h2 className="font-display text-xl font-bold text-white">{t('monitor.stats.title')}</h2>
           <div className="mt-4 grid gap-6 lg:grid-cols-2">
-            <Timeline24h />
             <CryHeatmap />
             <SleepChart />
             <FeedsChart />

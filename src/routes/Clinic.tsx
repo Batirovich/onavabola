@@ -25,6 +25,7 @@ export function Clinic() {
       <div>
         <h1 className="font-display text-3xl font-bold text-(--fg) sm:text-4xl">{t('meta.clinic.title')}</h1>
         <p className="mt-2 text-(--fg-muted)">{t('clinic.subtitle', { district: DISTRICT_NAME[lng] })}</p>
+        <p className="mt-1 text-sm text-(--fg-muted)">{t('clinic.purpose')}</p>
       </div>
 
       <div className="mt-6">

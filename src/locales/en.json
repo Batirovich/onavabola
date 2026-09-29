@@ -232,6 +232,7 @@
   },
   "clinic": {
     "subtitle": "{{district}} — nurse & specialist dashboard",
+    "purpose": "Patronage nurses use this during home visits to see which mothers need extra follow-up.",
     "kpi": {
       "registeredMothers": "Registered mothers",
       "pregnancies": "Pregnancies by trimester",

@@ -232,6 +232,7 @@
   },
   "clinic": {
     "subtitle": "{{district}} — hamshira va mutaxassislar paneli",
+    "purpose": "Patronaj hamshiralari uyma-uy tashrifi chogʻida qaysi onalarga koʻproq eʼtibor kerakligini shu yerdan koʻradi.",
     "kpi": {
       "registeredMothers": "Roʻyxatdagi onalar",
       "pregnancies": "Homiladorlar (trimestr boʻyicha)",
