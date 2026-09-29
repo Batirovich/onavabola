@@ -444,6 +444,11 @@
     "pricingNote": "Narxlar keyingi bosqichda, bozor tadqiqotidan soʻng aniqlashtiriladi.",
     "limitsTitle": "Yigʻi tahlilining chegaralari"
   },
+  "kiosk": {
+    "pausedTitle": "Sinov toʻxtatildi",
+    "tryItYourself": "Oʻzingiz sinab koʻring",
+    "resume": "Davom etish"
+  },
   "monitor": {
     "deviceStatus": {
       "online": "Onlayn",

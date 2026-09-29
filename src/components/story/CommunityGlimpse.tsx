@@ -9,11 +9,11 @@ import { EXAMPLE_MESSAGES } from '@/data/moderation';
 import { moderateText, MODERATION_EXPLANATIONS, type ModerationCategory } from '@/lib/moderation';
 import type { SupportedLanguage } from '@/i18n';
 
-const FEATURED_POSTS = COMMUNITY_POSTS.filter((p) => p.replies.some((r) => r.verifiedMidwife)).reduce<typeof COMMUNITY_POSTS>((picked, post) => {
+export const FEATURED_POSTS = COMMUNITY_POSTS.filter((p) => p.replies.some((r) => r.verifiedMidwife)).reduce<typeof COMMUNITY_POSTS>((picked, post) => {
   if (picked.length < 2 && !picked.some((p) => p.author.pseudonym === post.author.pseudonym)) picked.push(post);
   return picked;
 }, []);
-const MODERATION_EXAMPLE = EXAMPLE_MESSAGES.find((e) => e.id === 'ex-misinfo')!;
+export const MODERATION_EXAMPLE = EXAMPLE_MESSAGES.find((e) => e.id === 'ex-misinfo')!;
 
 function ModerationExample() {
   const { t, i18n } = useTranslation();

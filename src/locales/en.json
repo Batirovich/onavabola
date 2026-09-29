@@ -444,6 +444,11 @@
     "pricingNote": "Pricing will be defined at a later stage, after market research.",
     "limitsTitle": "Limits of cry analysis"
   },
+  "kiosk": {
+    "pausedTitle": "Demo paused",
+    "tryItYourself": "Try it yourself",
+    "resume": "Resume"
+  },
   "monitor": {
     "deviceStatus": {
       "online": "Online",

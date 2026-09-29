@@ -8,8 +8,8 @@ import { CryPredictionPhone } from '@/components/story/CryPredictionPhone';
 import { confidenceForDay, LEARNING_WINDOW_DAYS } from '@/data/monitor';
 import { cn } from '@/lib/utils';
 
-const NIGHT_CONTEXT = { timeSinceLastFeedMin: 205, sleptBeforeMin: 40, hour: 3 };
-const EARLY_DAY = 3;
+export const NIGHT_CONTEXT = { timeSinceLastFeedMin: 205, sleptBeforeMin: 40, hour: 3 };
+export const EARLY_DAY = 3;
 const STEP_COUNT = 4;
 
 function useIsDesktop() {

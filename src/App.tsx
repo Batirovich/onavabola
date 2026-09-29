@@ -11,6 +11,7 @@ const MotherApp = lazy(() => import('@/routes/MotherApp').then((m) => ({ default
 const Community = lazy(() => import('@/routes/Community').then((m) => ({ default: m.Community })));
 const Clinic = lazy(() => import('@/routes/Clinic').then((m) => ({ default: m.Clinic })));
 const Jury = lazy(() => import('@/routes/Jury').then((m) => ({ default: m.Jury })));
+const Kiosk = lazy(() => import('@/routes/Kiosk').then((m) => ({ default: m.Kiosk })));
 const NotFound = lazy(() => import('@/routes/NotFound').then((m) => ({ default: m.NotFound })));
 
 function RouteFallback() {
@@ -36,6 +37,7 @@ function App() {
                 <Route path="*" element={<NotFound />} />
               </Route>
               <Route path="monitor" element={<Monitor />} />
+              <Route path="kiosk" element={<Kiosk />} />
             </Routes>
           </Suspense>
         </BrowserRouter>

@@ -31,7 +31,7 @@ function playChime() {
   }
 }
 
-const HERO_CONTEXT = { timeSinceLastFeedMin: 190, sleptBeforeMin: 95, hour: 20 };
+export const HERO_CONTEXT = { timeSinceLastFeedMin: 190, sleptBeforeMin: 95, hour: 20 };
 
 export function HeroSection() {
   const { t } = useTranslation();
