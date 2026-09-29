@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useSearchParams } from 'react-router-dom';
 import { AppShell } from '@/components/app/AppShell';
 import type { AppTab } from '@/components/app/TabBar';
 import {
@@ -26,7 +27,10 @@ const FEATURES: Array<{ id: AppTab; icon: typeof HomeTabIcon }> = [
 export function MotherApp() {
   const { t } = useTranslation();
   usePageMeta('meta.app.title', 'meta.app.description');
-  const [desktopTab, setDesktopTab] = useState<AppTab>('home');
+  const [searchParams] = useSearchParams();
+  const requestedTab = searchParams.get('tab');
+  const initialTab = FEATURES.some((f) => f.id === requestedTab) ? (requestedTab as AppTab) : 'home';
+  const [activeTab, setActiveTab] = useState<AppTab>(initialTab);
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:py-16">
@@ -37,19 +41,19 @@ export function MotherApp() {
 
       <div className="mt-10 lg:hidden">
         <div className="mx-auto h-[720px] max-w-sm overflow-hidden rounded-[2.5rem] border border-(--border) shadow-soft-lapis">
-          <AppShell className="h-full" />
+          <AppShell className="h-full" activeTab={activeTab} onTabChange={setActiveTab} />
         </div>
       </div>
 
       <div className="mt-14 hidden items-center gap-16 lg:flex">
         <div className="flex-1 space-y-2">
           {FEATURES.map(({ id, icon: Icon }) => {
-            const active = desktopTab === id;
+            const active = activeTab === id;
             return (
               <button
                 key={id}
                 type="button"
-                onClick={() => setDesktopTab(id)}
+                onClick={() => setActiveTab(id)}
                 className={cn(
                   'flex w-full items-center gap-4 rounded-2xl border px-5 py-4 text-left transition-colors',
                   active ? 'border-lapis-200 bg-lapis-50' : 'border-transparent hover:bg-(--bg-elevated)',
@@ -75,7 +79,7 @@ export function MotherApp() {
         </div>
 
         <PhoneFrame className="shrink-0">
-          <AppShell className="h-full" activeTab={desktopTab} onTabChange={setDesktopTab} />
+          <AppShell className="h-full" activeTab={activeTab} onTabChange={setActiveTab} />
         </PhoneFrame>
       </div>
     </div>

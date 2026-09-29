@@ -54,7 +54,7 @@ export function AnimalSoundsGame() {
   return (
     <div className="rounded-xl bg-linen-100 p-4 text-center">
       <div className="text-5xl">{prompt.emoji}</div>
-      <p className="mt-2 text-sm text-ink-600">{lng === 'uz' ? 'Bu qanday ovoz chiqaradi?' : 'What sound does this make?'}</p>
+      <p className="mt-2 text-sm text-ink-600">{t('app.speech.animalPrompt')}</p>
       <div className="mt-3 grid grid-cols-3 gap-2">
         {choices.map((choice) => (
           <button

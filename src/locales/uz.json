@@ -156,6 +156,7 @@
       "repeatSoundBody": "Kartani bosing va soʻzni ovoz chiqarib takrorlang.",
       "animalSoundsTitle": "Hayvon ovozlari",
       "animalSoundsBody": "Hayvonni ovoziga mos tushiring.",
+      "animalPrompt": "Bu qanday ovoz chiqaradi?",
       "findWordTitle": "Soʻzni toping",
       "findWordBody": "Berilgan harf bilan boshlanadigan rasmni tanlang.",
       "playAgain": "Yana oʻynash",
@@ -370,6 +371,27 @@
       "title": "Endi tizim Azizni biladi",
       "subtitle": "Har bir tasdiqlangan yigʻi undan oʻrganadi. 21 kundan soʻng taxminlar aniqroq, ota-onaning tungi uyqusi esa tinchroq.",
       "cta": "Monitorni real vaqt rejimida koʻring"
+    },
+    "journey": {
+      "title": "Bitta sayohat",
+      "subtitle": "Bitta ilova — homiladorlikdan 7 yoshgacha. Har bir bosqichni sinab koʻring.",
+      "pregnancy": {
+        "eyebrow": "Homiladorlik, {{week}}-hafta",
+        "size": "Chaqalogʻingiz hozir {{item}} kabi"
+      },
+      "recovery": {
+        "eyebrow": "Tugʻruqdan keyin",
+        "title": "Onaning holati",
+        "body": "{{count}} savoldan iborat EPDS tekshiruvi tinch va maxfiy tarzda oʻtkaziladi."
+      },
+      "baby": {
+        "eyebrow": "{{months}} oylik chaqaloq",
+        "cries": "Bugun {{count}} marta yigʻladi",
+        "sleep": "Bugun {{hours}} soat uxladi"
+      },
+      "speech": {
+        "eyebrow": "3 yosh — nutq oʻyinlari"
+      }
     }
   },
   "monitor": {

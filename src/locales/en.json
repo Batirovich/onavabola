@@ -156,6 +156,7 @@
       "repeatSoundBody": "Tap the card and say the word out loud.",
       "animalSoundsTitle": "Animal sounds",
       "animalSoundsBody": "Match each animal to its sound.",
+      "animalPrompt": "What sound does this make?",
       "findWordTitle": "Find the word",
       "findWordBody": "Pick the picture that starts with the given letter.",
       "playAgain": "Play again",
@@ -370,6 +371,27 @@
       "title": "Now the system knows Aziz",
       "subtitle": "Every confirmed cry teaches it something. After 21 days, the guesses are sharper and the nights are calmer.",
       "cta": "See the monitor in real time"
+    },
+    "journey": {
+      "title": "One journey",
+      "subtitle": "One app — from pregnancy to age 7. Try any stop below.",
+      "pregnancy": {
+        "eyebrow": "Pregnancy, week {{week}}",
+        "size": "Your baby is about the size of {{item}} now"
+      },
+      "recovery": {
+        "eyebrow": "After birth",
+        "title": "How the mother is doing",
+        "body": "A {{count}}-question EPDS screening, done privately and gently."
+      },
+      "baby": {
+        "eyebrow": "{{months}}-month-old baby",
+        "cries": "Cried {{count}} times today",
+        "sleep": "Slept {{hours}}h today"
+      },
+      "speech": {
+        "eyebrow": "Age 3 — speech games"
+      }
     }
   },
   "monitor": {
