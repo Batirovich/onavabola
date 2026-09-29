@@ -16,10 +16,10 @@ function timeAgo(iso: string, lng: SupportedLanguage): string {
   return lng === 'uz' ? `${days} kun oldin` : `${days}d ago`;
 }
 
-export function PostCard({ post }: { post: CommunityPost }) {
+export function PostCard({ post, defaultExpanded = false }: { post: CommunityPost; defaultExpanded?: boolean }) {
   const { t, i18n } = useTranslation();
   const lng = i18n.resolvedLanguage as SupportedLanguage;
-  const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState(defaultExpanded);
   const channel = CHANNELS.find((c) => c.id === post.channel);
 
   return (

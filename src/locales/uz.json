@@ -392,6 +392,16 @@
       "speech": {
         "eyebrow": "3 yosh — nutq oʻyinlari"
       }
+    },
+    "community": {
+      "title": "Yolgʻiz emassiz",
+      "subtitle": "Minglab onalar savol beradi, tajriba almashadi va tasdiqlangan hamshiralardan javob oladi.",
+      "cta": "Hamjamiyatga qoʻshiling",
+      "moderation": {
+        "eyebrow": "Xavfsizlik amalda",
+        "title": "Har bir xabar tekshiriladi",
+        "cta": "Xabarni tekshirib koʻring"
+      }
     }
   },
   "monitor": {

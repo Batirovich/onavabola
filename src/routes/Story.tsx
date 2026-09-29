@@ -1,3 +1,4 @@
+import { CommunityGlimpse } from '@/components/story/CommunityGlimpse';
 import { Day21Section } from '@/components/story/Day21Section';
 import { HeroSection } from '@/components/story/HeroSection';
 import { JourneyStops } from '@/components/story/JourneyStops';
@@ -13,6 +14,7 @@ export function Story() {
       <NightScene />
       <Day21Section />
       <JourneyStops />
+      <CommunityGlimpse />
     </div>
   );
 }

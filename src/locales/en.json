@@ -392,6 +392,16 @@
       "speech": {
         "eyebrow": "Age 3 — speech games"
       }
+    },
+    "community": {
+      "title": "You're not alone",
+      "subtitle": "Thousands of mothers ask questions, share what worked, and hear back from verified nurses.",
+      "cta": "Join the community",
+      "moderation": {
+        "eyebrow": "Safety in action",
+        "title": "Every message gets checked",
+        "cta": "Check this message"
+      }
     }
   },
   "monitor": {
