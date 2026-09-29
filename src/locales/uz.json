@@ -343,6 +343,16 @@
       "title": "Xavfsizlik va maxfiylik"
     }
   },
+  "story": {
+    "hero": {
+      "title": "Chaqaloq yigʻlaganda, siz yolgʻiz emassiz",
+      "subtitle": "Beshik yonidagi qurilma yigʻini eshitadi, sababini taklif qiladi va chaqalogʻingizni oʻrganadi.",
+      "playCry": "Yigʻini eshiting",
+      "seeHow": "Qanday ishlaydi?",
+      "notification": "Aziz uygʻondi va yigʻlayapti",
+      "muteToggle": "Ovoz"
+    }
+  },
   "monitor": {
     "deviceStatus": {
       "online": "Onlayn",

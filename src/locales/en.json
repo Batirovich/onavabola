@@ -343,6 +343,16 @@
       "title": "Safety & privacy"
     }
   },
+  "story": {
+    "hero": {
+      "title": "When your baby cries, you're not alone",
+      "subtitle": "A bedside device hears the cry, suggests why, and learns your baby over time.",
+      "playCry": "Hear a cry",
+      "seeHow": "See how it works",
+      "notification": "Aziz woke up and is crying",
+      "muteToggle": "Sound"
+    }
+  },
   "monitor": {
     "deviceStatus": {
       "online": "Online",

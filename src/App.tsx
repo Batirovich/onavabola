@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { SiteLayout } from '@/components/layout/SiteLayout';
 
-const Landing = lazy(() => import('@/routes/Landing').then((m) => ({ default: m.Landing })));
+const Story = lazy(() => import('@/routes/Story').then((m) => ({ default: m.Story })));
 const Monitor = lazy(() => import('@/routes/Monitor').then((m) => ({ default: m.Monitor })));
 const MotherApp = lazy(() => import('@/routes/MotherApp').then((m) => ({ default: m.MotherApp })));
 const Community = lazy(() => import('@/routes/Community').then((m) => ({ default: m.Community })));
@@ -27,7 +27,7 @@ function App() {
           <Suspense fallback={<RouteFallback />}>
             <Routes>
               <Route element={<SiteLayout />}>
-                <Route index element={<Landing />} />
+                <Route index element={<Story />} />
                 <Route path="app" element={<MotherApp />} />
                 <Route path="community" element={<Community />} />
                 <Route path="clinic" element={<Clinic />} />
