@@ -3,12 +3,12 @@ import { Section, SectionHeading } from '@/components/landing/Section';
 import { PROBLEM_TIMELINE } from '@/data/landing';
 import type { SupportedLanguage } from '@/i18n';
 
-export function ProblemTimeline() {
+export function ProblemTimeline({ id }: { id?: string } = {}) {
   const { t, i18n } = useTranslation();
   const lng = i18n.resolvedLanguage as SupportedLanguage;
 
   return (
-    <Section>
+    <Section id={id}>
       <SectionHeading title={t('landing.problem.title')} subtitle={t('landing.problem.subtitle')} />
 
       <ol className="relative mt-12 space-y-8 lg:space-y-0">

@@ -3,14 +3,14 @@ import { Section, SectionHeading } from '@/components/landing/Section';
 import { ROADMAP } from '@/data/landing';
 import type { SupportedLanguage } from '@/i18n';
 
-export function RoadmapSection() {
+export function RoadmapSection({ id }: { id?: string } = {}) {
   const { t, i18n } = useTranslation();
   const lng = i18n.resolvedLanguage as SupportedLanguage;
 
   return (
-    <Section>
+    <Section id={id}>
       <SectionHeading title={t('landing.roadmap.title')} />
-      <ol className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
+      <ol className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-6">
         {ROADMAP.map((step, i) => (
           <li key={step.id} className="relative pl-10 lg:pl-0">
             <div className="flex items-center gap-3 lg:flex-col lg:items-start lg:gap-0">

@@ -6,12 +6,12 @@ import type { SupportedLanguage } from '@/i18n';
 
 const ICONS = [Cpu, ShieldCheck, Stethoscope, Database];
 
-export function SafetySection() {
+export function SafetySection({ id }: { id?: string } = {}) {
   const { t, i18n } = useTranslation();
   const lng = i18n.resolvedLanguage as SupportedLanguage;
 
   return (
-    <Section>
+    <Section id={id}>
       <SectionHeading title={t('landing.safety.title')} />
       <div className="mt-10 grid gap-5 sm:grid-cols-2">
         {SAFETY_POINTS.map((point, i) => {

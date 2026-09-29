@@ -415,6 +415,35 @@
       "forJury": "Full details for jury"
     }
   },
+  "jury": {
+    "print": "Print / PDF",
+    "tocLabel": "Section navigation",
+    "toc": {
+      "problem": "Problem",
+      "solution": "Solution",
+      "different": "What's different",
+      "mvp": "MVP status",
+      "business": "Business model",
+      "roadmap": "Roadmap",
+      "team": "Team",
+      "safety": "Safety"
+    },
+    "solution": {
+      "title": "The solution, in one picture",
+      "subtitle": "One device and one app — covering all five stages."
+    },
+    "mvpStatus": {
+      "title": "What works today",
+      "subtitle": "Open and specific for the jury: what's a real demo, what's a mockup, and what's still on the roadmap.",
+      "levels": {
+        "working": "Working",
+        "mockup": "Mockup",
+        "roadmap": "On the roadmap"
+      }
+    },
+    "pricingNote": "Pricing will be defined at a later stage, after market research.",
+    "limitsTitle": "Limits of cry analysis"
+  },
   "monitor": {
     "deviceStatus": {
       "online": "Online",

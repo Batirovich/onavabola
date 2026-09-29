@@ -7,7 +7,7 @@ export function Footer() {
   const { t } = useTranslation();
 
   return (
-    <footer className="relative overflow-hidden border-t border-(--border) bg-lapis-900 text-white">
+    <footer className="relative overflow-hidden border-t border-(--border) bg-lapis-900 text-white no-print">
       <TileMotif className="absolute inset-0 h-full w-full" color="#ffffff" opacity={0.05} size={72} />
       <div className="relative mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid gap-10 sm:grid-cols-3">

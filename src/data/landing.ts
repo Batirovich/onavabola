@@ -188,6 +188,11 @@ export interface RoadmapStep {
 
 export const ROADMAP: RoadmapStep[] = [
   {
+    id: 'mvp',
+    title: { uz: 'MVP va tanlov, 2026-yil sentyabr–oktyabr', en: 'MVP & competition, Sep–Oct 2026' },
+    body: { uz: 'InnoWeek.Uz–2026 koʻrgazmasi uchun ishlaydigan demo tayyorlash.', en: 'Build a working demo for the InnoWeek.Uz–2026 exhibition.' },
+  },
+  {
     id: 'pilot',
     title: { uz: 'Pilot loyiha', en: 'Pilot' },
     body: { uz: 'Bitta tuman doirasida sinov ishga tushirish.', en: 'Launch a pilot within a single district.' },

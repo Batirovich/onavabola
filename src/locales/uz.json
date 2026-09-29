@@ -415,6 +415,35 @@
       "forJury": "Hakamlar uchun toʻliq maʼlumot"
     }
   },
+  "jury": {
+    "print": "Chop etish / PDF",
+    "tocLabel": "Boʻlimlar boʻyicha navigatsiya",
+    "toc": {
+      "problem": "Muammo",
+      "solution": "Yechim",
+      "different": "Nima farq qiladi",
+      "mvp": "MVP holati",
+      "business": "Biznes modeli",
+      "roadmap": "Yoʻl xaritasi",
+      "team": "Jamoa",
+      "safety": "Xavfsizlik"
+    },
+    "solution": {
+      "title": "Yechim — bir rasmda",
+      "subtitle": "Bitta qurilma va bitta ilova — beshta bosqichning barchasini qamrab oladi."
+    },
+    "mvpStatus": {
+      "title": "Bugun nima ishlaydi",
+      "subtitle": "Hakamlar uchun ochiq va aniq: nima haqiqiy demo, nima maket, nima hali yoʻl xaritasida.",
+      "levels": {
+        "working": "Ishlaydi",
+        "mockup": "Maket",
+        "roadmap": "Yoʻl xaritasida"
+      }
+    },
+    "pricingNote": "Narxlar keyingi bosqichda, bozor tadqiqotidan soʻng aniqlashtiriladi.",
+    "limitsTitle": "Yigʻi tahlilining chegaralari"
+  },
   "monitor": {
     "deviceStatus": {
       "online": "Onlayn",

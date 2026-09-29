@@ -11,12 +11,12 @@ const ICONS: Record<string, typeof Wallet> = {
   b2b: Building2,
 };
 
-export function BusinessModelSection() {
+export function BusinessModelSection({ id }: { id?: string } = {}) {
   const { t, i18n } = useTranslation();
   const lng = i18n.resolvedLanguage as SupportedLanguage;
 
   return (
-    <Section className="bg-(--bg-elevated)">
+    <Section id={id} className="bg-(--bg-elevated)">
       <SectionHeading title={t('landing.business.title')} />
       <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {BUSINESS_MODEL.map((item) => {

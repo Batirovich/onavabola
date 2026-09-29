@@ -4,12 +4,12 @@ import { GeometricAvatar } from '@/components/community/GeometricAvatar';
 import { TEAM } from '@/data/landing';
 import type { SupportedLanguage } from '@/i18n';
 
-export function TeamSection() {
+export function TeamSection({ id }: { id?: string } = {}) {
   const { t, i18n } = useTranslation();
   const lng = i18n.resolvedLanguage as SupportedLanguage;
 
   return (
-    <Section className="bg-(--bg-elevated)">
+    <Section id={id} className="bg-(--bg-elevated)">
       <SectionHeading title={t('landing.team.title')} subtitle={t('landing.team.subtitle')} />
       <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {TEAM.map((member) => (

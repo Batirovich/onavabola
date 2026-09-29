@@ -29,7 +29,7 @@ export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-(--border) bg-(--bg)/85 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-(--border) bg-(--bg)/85 backdrop-blur no-print">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
         <NavLink to="/" className="shrink-0" aria-label={t('nav.story')}>
           <Wordmark />

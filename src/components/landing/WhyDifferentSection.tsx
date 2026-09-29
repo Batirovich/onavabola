@@ -3,12 +3,12 @@ import { Section, SectionHeading } from '@/components/landing/Section';
 import { DIFFERENTIATORS } from '@/data/landing';
 import type { SupportedLanguage } from '@/i18n';
 
-export function WhyDifferentSection() {
+export function WhyDifferentSection({ id }: { id?: string } = {}) {
   const { t, i18n } = useTranslation();
   const lng = i18n.resolvedLanguage as SupportedLanguage;
 
   return (
-    <Section>
+    <Section id={id}>
       <SectionHeading title={t('landing.whyDifferent.title')} />
       <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {DIFFERENTIATORS.map((d, i) => (

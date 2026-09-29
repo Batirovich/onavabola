@@ -10,6 +10,7 @@ const Monitor = lazy(() => import('@/routes/Monitor').then((m) => ({ default: m.
 const MotherApp = lazy(() => import('@/routes/MotherApp').then((m) => ({ default: m.MotherApp })));
 const Community = lazy(() => import('@/routes/Community').then((m) => ({ default: m.Community })));
 const Clinic = lazy(() => import('@/routes/Clinic').then((m) => ({ default: m.Clinic })));
+const Jury = lazy(() => import('@/routes/Jury').then((m) => ({ default: m.Jury })));
 const NotFound = lazy(() => import('@/routes/NotFound').then((m) => ({ default: m.NotFound })));
 
 function RouteFallback() {
@@ -31,6 +32,7 @@ function App() {
                 <Route path="app" element={<MotherApp />} />
                 <Route path="community" element={<Community />} />
                 <Route path="clinic" element={<Clinic />} />
+                <Route path="jury" element={<Jury />} />
                 <Route path="*" element={<NotFound />} />
               </Route>
               <Route path="monitor" element={<Monitor />} />
