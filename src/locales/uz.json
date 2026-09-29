@@ -351,6 +351,19 @@
       "seeHow": "Qanday ishlaydi?",
       "notification": "Aziz uygʻondi va yigʻlayapti",
       "muteToggle": "Ovoz"
+    },
+    "night": {
+      "eyebrow": "03:10",
+      "step1Title": "Uyda hammayoq jimjit",
+      "step1Body": "Aziz uxlayapti. Ota-onasi ham uxlayapti. Lekin beshik yonidagi qurilma tinglashda davom etmoqda.",
+      "step2Title": "Aziz yigʻlay boshladi",
+      "step2Body": "Ovoz shu zahoti qurilmaning oʻzida tahlil qilinadi — hech narsa tashqariga yuborilmaydi.",
+      "step3Title": "Bu — birinchi kunlar",
+      "step3Body": "Tizim Azizni hali yaxshi tanimaydi, shuning uchun taxminlar kengroq.",
+      "step4Title": "Onasi keldi, u tinchlandi",
+      "step4Body": "Har bir tasdiqlangan holatdan soʻng tizim aniqroq boʻlib boradi.",
+      "dayConfidence": "{{day}}-kun: taxminan {{value}}% ishonch",
+      "confidenceUp": "21-kunga kelib ishonch +{{value}}% oshadi"
     }
   },
   "monitor": {

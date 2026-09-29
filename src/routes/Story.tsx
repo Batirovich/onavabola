@@ -1,4 +1,5 @@
 import { HeroSection } from '@/components/story/HeroSection';
+import { NightScene } from '@/components/story/NightScene';
 import { usePageMeta } from '@/lib/usePageMeta';
 
 export function Story() {
@@ -7,6 +8,7 @@ export function Story() {
   return (
     <div>
       <HeroSection />
+      <NightScene />
     </div>
   );
 }

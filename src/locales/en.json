@@ -351,6 +351,19 @@
       "seeHow": "See how it works",
       "notification": "Aziz woke up and is crying",
       "muteToggle": "Sound"
+    },
+    "night": {
+      "eyebrow": "3:10 AM",
+      "step1Title": "The house is quiet",
+      "step1Body": "Aziz is asleep. So are his parents. But the device by the crib is still listening.",
+      "step2Title": "Aziz starts crying",
+      "step2Body": "The sound is analyzed right there on the device — nothing is sent anywhere else.",
+      "step3Title": "These are the early days",
+      "step3Body": "The system doesn't know Aziz well yet, so the guesses are broader.",
+      "step4Title": "His mother comes, and he calms down",
+      "step4Body": "Every confirmed moment makes the system a little sharper.",
+      "dayConfidence": "Day {{day}}: about {{value}}% confidence",
+      "confidenceUp": "By day 21, confidence is up +{{value}}%"
     }
   },
   "monitor": {
