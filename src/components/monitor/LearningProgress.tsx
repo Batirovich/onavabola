@@ -36,7 +36,7 @@ export function LearningProgress({ learningDay, confidence }: { learningDay: num
 
       <div className="mt-3 h-40">
         <ResponsiveContainer width="100%" height="100%">
-          <AreaChart data={chartData} margin={{ top: 8, right: 8, left: -24, bottom: 0 }}>
+          <AreaChart data={chartData} margin={{ top: 8, right: 8, left: -8, bottom: 0 }}>
             <defs>
               <linearGradient id="confidenceFill" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="0%" stopColor="#62BBB0" stopOpacity={0.5} />
@@ -44,7 +44,7 @@ export function LearningProgress({ learningDay, confidence }: { learningDay: num
               </linearGradient>
             </defs>
             <XAxis dataKey="day" stroke="#4D597E" fontSize={11} tickLine={false} axisLine={false} />
-            <YAxis domain={[30, 100]} stroke="#4D597E" fontSize={11} tickLine={false} axisLine={false} width={32} />
+            <YAxis domain={[30, 100]} stroke="#4D597E" fontSize={11} tickLine={false} axisLine={false} width={36} />
             <Tooltip
               contentStyle={{ background: '#0A1226', border: '1px solid #2A3358', borderRadius: 12, fontSize: 12 }}
               labelStyle={{ color: '#7C88AD' }}

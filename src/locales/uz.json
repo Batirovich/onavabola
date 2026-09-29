@@ -364,6 +364,12 @@
       "step4Body": "Har bir tasdiqlangan holatdan soʻng tizim aniqroq boʻlib boradi.",
       "dayConfidence": "{{day}}-kun: taxminan {{value}}% ishonch",
       "confidenceUp": "21-kunga kelib ishonch +{{value}}% oshadi"
+    },
+    "day21": {
+      "eyebrow": "21-kun",
+      "title": "Endi tizim Azizni biladi",
+      "subtitle": "Har bir tasdiqlangan yigʻi undan oʻrganadi. 21 kundan soʻng taxminlar aniqroq, ota-onaning tungi uyqusi esa tinchroq.",
+      "cta": "Monitorni real vaqt rejimida koʻring"
     }
   },
   "monitor": {

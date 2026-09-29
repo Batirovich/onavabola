@@ -364,6 +364,12 @@
       "step4Body": "Every confirmed moment makes the system a little sharper.",
       "dayConfidence": "Day {{day}}: about {{value}}% confidence",
       "confidenceUp": "By day 21, confidence is up +{{value}}%"
+    },
+    "day21": {
+      "eyebrow": "Day 21",
+      "title": "Now the system knows Aziz",
+      "subtitle": "Every confirmed cry teaches it something. After 21 days, the guesses are sharper and the nights are calmer.",
+      "cta": "See the monitor in real time"
     }
   },
   "monitor": {

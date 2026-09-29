@@ -21,7 +21,7 @@ export function MonitorLearningSection() {
       <div className="mt-12 grid gap-10 lg:grid-cols-2 lg:items-center">
         <div className="h-64 rounded-3xl border border-linen-300 bg-white p-4">
           <ResponsiveContainer width="100%" height="100%">
-            <AreaChart data={chartData} margin={{ top: 12, right: 12, left: -20, bottom: 0 }}>
+            <AreaChart data={chartData} margin={{ top: 12, right: 12, left: -8, bottom: 0 }}>
               <defs>
                 <linearGradient id="landingConfidence" x1="0" y1="0" x2="0" y2="1">
                   <stop offset="0%" stopColor="#1F8A82" stopOpacity={0.35} />
@@ -29,7 +29,7 @@ export function MonitorLearningSection() {
                 </linearGradient>
               </defs>
               <XAxis dataKey="day" stroke="#8A8398" fontSize={11} tickLine={false} axisLine={false} />
-              <YAxis domain={[30, 100]} stroke="#8A8398" fontSize={11} tickLine={false} axisLine={false} width={32} />
+              <YAxis domain={[30, 100]} stroke="#8A8398" fontSize={11} tickLine={false} axisLine={false} width={36} />
               <Tooltip
                 contentStyle={{ borderRadius: 12, fontSize: 12, borderColor: '#E3DAC7' }}
                 formatter={(value) => [`${value}%`, t('monitor.learning.confidence')]}
